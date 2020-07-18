@@ -90,19 +90,18 @@ type Prices = {
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
-const getOrePrice = (priceMap: Prices, ore: Ore, buysell: "buy" | "sell") => {
+const getOrePrice = (
+  priceMap: Prices,
+  ore: Ore,
+  buysell: "buy" | "sell",
+): number => {
   const primary = ores.get(ore.primaryOreId)!
   if (priceMap[ore.id][buysell].percentile > 0) {
     return (
-      priceMap[ore.id][buysell].percentile /
-      ore.compressAmount /
-      primary.volume
-    ).toLocaleString(undefined, {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    })
+      priceMap[ore.id][buysell].percentile / ore.compressAmount / primary.volume
+    )
   } else {
-    return "0.00"
+    return 0
   }
 }
 
@@ -111,7 +110,7 @@ const getMineralsPrice = (
   ore: Ore,
   buysell: "buy" | "sell",
   refinePercent: number,
-) => {
+): number => {
   const primary = ores.get(ore.primaryOreId)!
   return (
     Object.entries(ore.minerals || {})
@@ -122,14 +121,13 @@ const getMineralsPrice = (
           primary.volume,
       )
       .reduce((a, b) => a + b, 0) * refinePercent
-  ).toLocaleString(undefined, {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  })
+  )
 }
 
-const numericSort = (key: string) => (a: any, b: any) =>
-  Number.parseFloat(a[key]) - Number.parseFloat(b[key])
+const numericSort = (key: string) => (a: any, b: any) => {
+  console.log(a, b, key)
+  return a[key] - b[key]
+}
 
 const localeSort = (key: string) => (a: any, b: any) =>
   a[key].localeCompare(b[key])
@@ -195,14 +193,18 @@ const columns = [
   },
 ]
 
-const IskM3 = ({ value }: { value: number | string }) => (
-  <>
-    {value}{" "}
-    <span className="leading-5 text-xs">
-      ISK/m<sup>3</sup>
-    </span>
-  </>
-)
+const IskM3 = ({ value }: { value: number }) =>
+  value === 0 ? null : (
+    <>
+      {value.toLocaleString(undefined, {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      })}{" "}
+      <span className="leading-5 text-xs">
+        ISK/m<sup>3</sup>
+      </span>
+    </>
+  )
 
 const Bonus = ({ amount }: { amount: number }) => (
   <>
