@@ -4,6 +4,8 @@ import oresList from "./ores.json"
 import mineralsList from "./minerals.json"
 import useSWR from "swr"
 import DataTable, { createTheme } from "react-data-table-component"
+// @ts-ignore
+import rippleSpinner from "./ripple-spinner.svg"
 
 createTheme("custom", {
   text: {
@@ -41,6 +43,8 @@ const customStyles = {
     },
     highlightOnHoverStyle: {
       transitionDuration: "0s",
+      borderBottomColor: "#E2E8F0",
+      outlineColor: "#E2E8F0",
     },
   },
 }
@@ -54,7 +58,7 @@ type Ore = {
   name: string
   primaryOreId: number
   minerals: {
-    [key: string]: number
+    [key: string]: number | undefined
   }
 }
 
@@ -89,13 +93,16 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json())
 const getOrePrice = (priceMap: Prices, ore: Ore, buysell: "buy" | "sell") => {
   const primary = ores.get(ore.primaryOreId)!
   if (priceMap[ore.id][buysell].percentile > 0) {
-    return +(
+    return (
       priceMap[ore.id][buysell].percentile /
       ore.compressAmount /
       primary.volume
-    ).toFixed(2)
+    ).toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
   } else {
-    return 0
+    return "0.00"
   }
 }
 
@@ -106,86 +113,114 @@ const getMineralsPrice = (
   refinePercent: number,
 ) => {
   const primary = ores.get(ore.primaryOreId)!
-  return +(
+  return (
     Object.entries(ore.minerals || {})
       .map(
         ([mineralId, amount]) =>
-          (priceMap[mineralId][buysell].percentile * amount) /
+          (priceMap[mineralId][buysell].percentile * amount!) /
           primary.refineAmount /
           primary.volume,
       )
       .reduce((a, b) => a + b, 0) * refinePercent
-  ).toFixed(2)
+  ).toLocaleString(undefined, {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  })
 }
 
-const numericSort = (key) => (a, b) =>
+const numericSort = (key: string) => (a: any, b: any) =>
   Number.parseFloat(a[key]) - Number.parseFloat(b[key])
+
+const localeSort = (key: string) => (a: any, b: any) =>
+  a[key].localeCompare(b[key])
 
 const columns = [
   {
     name: "Ore Name",
-    selector: "name",
+    selector: "displayName",
     sortable: true,
+    sortFunction: localeSort("name"),
     grow: 2,
     wrap: true,
   },
   {
-    name: "",
+    name: "Group",
     selector: "icon",
-    sortable: false,
-    width: "64px",
-    wrap: true,
-  },
-  {
-    name: "Bonus",
-    selector: "bonus",
     sortable: true,
-    sortFunction: numericSort("bonus"),
+    sortFunction: localeSort("group"),
+    width: "80px",
     wrap: true,
   },
   {
     name: "Buy Price",
-    selector: "buy",
+    selector: "displayBuy",
     sortable: true,
     sortFunction: numericSort("buy"),
     wrap: true,
   },
   {
     name: "Minerals Buy Price",
-    selector: "mineralsBuy",
+    selector: "displayMineralsBuy",
     sortable: true,
     sortFunction: numericSort("mineralsBuy"),
     wrap: true,
   },
   {
     name: "Perfect Minerals Buy Price",
-    selector: "perfectMineralsBuy",
+    selector: "displayPerfectMineralsBuy",
     sortable: true,
     sortFunction: numericSort("perfectMineralsBuy"),
     wrap: true,
   },
   {
     name: "Sell Price",
-    selector: "sell",
+    selector: "displaySell",
     sortable: true,
     sortFunction: numericSort("sell"),
     wrap: true,
   },
   {
     name: "Minerals Sell Price",
-    selector: "mineralsSell",
+    selector: "displayMineralsSell",
     sortable: true,
     sortFunction: numericSort("mineralsSell"),
     wrap: true,
   },
   {
     name: "Perfect Minerals Sell Price",
-    selector: "perfectMineralsSell",
+    selector: "displayPerfectMineralsSell",
     sortable: true,
     sortFunction: numericSort("perfectMineralsSell"),
     wrap: true,
   },
 ]
+
+const IskM3 = ({ value }: { value: number | string }) => (
+  <>
+    {value}{" "}
+    <span className="leading-5 text-xs">
+      ISK/m<sup>3</sup>
+    </span>
+  </>
+)
+
+const Bonus = ({ amount }: { amount: number }) => (
+  <>
+    {amount > 0 ? (
+      <span className="px-2 ml-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-300 text-green-900">
+        +{amount * 100}%
+      </span>
+    ) : null}
+  </>
+)
+
+const Icon = ({ id, name }: { id: number; name: string }) => (
+  <img
+    src={`https://images.evetech.net/types/${id}/icon?size=32`}
+    alt={name}
+    title={name}
+  />
+)
 
 function App() {
   const allItems = (oresList as Id[]).concat(mineralsList)
@@ -197,56 +232,74 @@ function App() {
     focusThrottleInterval: 60_000, // 1 min
   })
 
-  if (error) return <div>failed to load</div>
-  if (!priceMap) return <div className="m-4 content-center">loading...</div>
+  if (error) return <div className="p-4">failed to load</div>
+  if (!priceMap)
+    return (
+      <div className="p-4">
+        <img
+          src={rippleSpinner}
+          alt="loading"
+          title="loading"
+          className="w-20 inline-flex"
+        />
+        loading...
+      </div>
+    )
 
   const data = oresList
     .filter((ore) => ore.bonus < 0.15)
     .map((ore) => {
+      const { id, name, bonus, primaryOreId } = ore
+      const primaryOre = ores.get(primaryOreId)!
+      const buy = getOrePrice(priceMap, ore, "buy")
+      const mineralsBuy = getMineralsPrice(priceMap, ore, "buy", 0.7)
+      const perfectMineralsBuy = getMineralsPrice(priceMap, ore, "buy", 0.8934)
+      const sell = getOrePrice(priceMap, ore, "sell")
+      const mineralsSell = getMineralsPrice(priceMap, ore, "sell", 0.7)
+      const perfectMineralsSell = getMineralsPrice(
+        priceMap,
+        ore,
+        "sell",
+        0.8934,
+      )
+
       return {
-        id: ore.id,
-        name: ore.name,
-        icon: (
-          <img
-            src={`https://images.evetech.net/types/${ore.id}/icon?size=32`}
-            alt={ore.name}
-            title={ore.name}
-          />
+        id,
+        name,
+        displayName: (
+          <>
+            {name} <Bonus amount={bonus} />
+          </>
         ),
-        bonus: `${ore.bonus * 100}%`,
-        buy: `${getOrePrice(priceMap, ore, "buy")} isk/m3`,
-        mineralsBuy: `${getMineralsPrice(priceMap, ore, "buy", 0.7)} isk/m3`,
-        perfectMineralsBuy: `${getMineralsPrice(
-          priceMap,
-          ore,
-          "buy",
-          0.8934,
-        )} isk/m3`,
-        sell: `${getOrePrice(priceMap, ore, "sell")} isk/m3`,
-        mineralsSell: `${getMineralsPrice(priceMap, ore, "sell", 0.7)} isk/m3`,
-        perfectMineralsSell: `${getMineralsPrice(
-          priceMap,
-          ore,
-          "sell",
-          0.8934,
-        )} isk/m3`,
+        group: primaryOre.name,
+        icon: <Icon id={id} name={name} />,
+        buy,
+        displayBuy: <IskM3 value={buy} />,
+        mineralsBuy,
+        displayMineralsBuy: <IskM3 value={mineralsBuy} />,
+        perfectMineralsBuy,
+        displayPerfectMineralsBuy: <IskM3 value={perfectMineralsBuy} />,
+        sell,
+        displaySell: <IskM3 value={sell} />,
+        mineralsSell,
+        displayMineralsSell: <IskM3 value={mineralsSell} />,
+        perfectMineralsSell,
+        displayPerfectMineralsSell: <IskM3 value={perfectMineralsSell} />,
       }
     })
 
   return (
-    <>
-      <DataTable
-        title="Eve Harvest"
-        columns={columns}
-        data={data}
-        theme="custom"
-        customStyles={customStyles}
-        defaultSortField="buy"
-        defaultSortAsc={false}
-        striped
-        highlightOnHover
-      />
-    </>
+    <DataTable
+      title="Eve Harvest"
+      columns={columns}
+      data={data}
+      theme="custom"
+      customStyles={customStyles}
+      defaultSortField="buy"
+      defaultSortAsc={false}
+      striped
+      highlightOnHover
+    />
   )
 }
 
