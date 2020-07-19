@@ -9,9 +9,9 @@ export const FilterButton: React.FunctionComponent<{
   color: string
 }> = ({ children, onClick, enabled, color, ...props }) => (
   <button
-    className={`bg-transparent font-semibold px-1 leading-tight border-2 ${color} rounded text-xs mx-1 ${
+    className={`bg-transparent font-semibold px-1 leading-tight border-2 rounded text-xs mx-1 ${
       enabled ? "text-gray-900" : "text-gray-100"
-    } ${enabled ? color : ""}`}
+    }`}
     style={{
       backgroundColor: enabled ? color : undefined,
       borderColor: color,
