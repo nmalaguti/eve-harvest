@@ -8,6 +8,9 @@ module.exports = {
       gridTemplateRows: {
         "8": "repeat(8, minmax(0, 1fr))",
       },
+      screens: {
+        pointer: { raw: "(hover: hover) and (pointer: fine)" },
+      },
     },
     screens: {
       xs: "480px",

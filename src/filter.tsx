@@ -12,15 +12,17 @@ export const FilterButton: React.FunctionComponent<{
   const Button = styled.button`
     background-color: ${enabled ? color : "transparent"};
     border-color: ${color};
-    &:hover {
-      ${enabled ? "" : `background-color: ${color}`};
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        ${enabled ? "" : `background-color: ${color}`};
+      }
     }
   `
   return (
     <div className="text-center">
       <Button
-        className={`w-30 min-w-full whitespace-no-wrap bg-transparent font-semibold px-1 leading-tight border-2 rounded text-xs mt-1 mr-1 hover:text-gray-900 ${
-          enabled ? "text-gray-900 hover:bg-gray-300" : "text-gray-100"
+        className={`w-30 min-w-full whitespace-no-wrap bg-transparent font-semibold px-1 leading-tight border-2 rounded text-xs mt-1 mr-1 pointer:hover:text-gray-900 ${
+          enabled ? "text-gray-900 pointer:hover:bg-gray-300" : "text-gray-100"
         }`}
         {...props}
         onClick={onClick}
