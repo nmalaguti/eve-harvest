@@ -7,9 +7,6 @@ import {
   ores,
   oresList,
 } from "./data"
-import { Bonus } from "./bonus"
-import { Icon } from "./icon"
-import { IskM3 } from "./isk-m3"
 import React, { useMemo } from "react"
 import useSWR from "swr"
 import { useOreFilters } from "./hooks"
@@ -19,65 +16,47 @@ import DataTable from "react-data-table-component"
 import { customStyles } from "./theme"
 import { Filter } from "./filter"
 
-function dataFactory(priceMap: Prices) {
+function dataFactory(priceMap: Prices | undefined) {
   return (
     priceMap &&
-    oresList.map((ore) => {
-      const { id, name, bonus, primaryOreId } = ore
-      const primaryOre = ores.get(primaryOreId)!
-      const buy = getOrePrice(priceMap, ore, "buy")
-      const mineralsBuy = getMineralsPrice(priceMap, ore, "buy", 0.7)
-      const perfectMineralsBuy = getMineralsPrice(priceMap, ore, "buy", 0.8934)
-      const sell = getOrePrice(priceMap, ore, "sell")
-      const mineralsSell = getMineralsPrice(priceMap, ore, "sell", 0.7)
-      const perfectMineralsSell = getMineralsPrice(
-        priceMap,
-        ore,
-        "sell",
-        0.8934,
-      )
+    oresList
+      .filter((ore) => ore.bonus < 0.15)
+      .map((ore) => {
+        const { id, name, bonus, primaryOreId, color } = ore
+        const { name: group } = ores.get(primaryOreId)!
+        const buy = getOrePrice(priceMap, ore, "buy")
+        const mineralsBuy = getMineralsPrice(priceMap, ore, "buy")
+        const sell = getOrePrice(priceMap, ore, "sell")
+        const mineralsSell = getMineralsPrice(priceMap, ore, "sell")
 
-      return {
-        id,
-        name,
-        displayName: (
-          <>
-            {name} <Bonus amount={bonus} />
-          </>
-        ),
-        group: primaryOre.name,
-        displayGroup: (
-          <Icon id={id} name={name} style={{ backgroundColor: ore.color }} />
-        ),
-        buy,
-        displayBuy: <IskM3 value={buy} />,
-        mineralsBuy,
-        displayMineralsBuy: <IskM3 value={mineralsBuy} />,
-        perfectMineralsBuy,
-        displayPerfectMineralsBuy: <IskM3 value={perfectMineralsBuy} />,
-        sell,
-        displaySell: <IskM3 value={sell} />,
-        mineralsSell,
-        displayMineralsSell: <IskM3 value={mineralsSell} />,
-        perfectMineralsSell,
-        displayPerfectMineralsSell: <IskM3 value={perfectMineralsSell} />,
-        primaryOreId,
-        bonus,
-      }
-    })
+        return {
+          id,
+          name,
+          group,
+          bonus,
+          color,
+          primaryOreId,
+          buy,
+          mineralsBuy: mineralsBuy * 0.7,
+          perfectMineralsBuy: mineralsBuy * 0.8934,
+          sell,
+          mineralsSell: mineralsSell * 0.7,
+          perfectMineralsSell: mineralsSell * 0.8934,
+        }
+      })
   )
 }
 
+const allItems = (oresList as Id[]).concat(mineralsList)
+const url = `https://market.fuzzwork.co.uk/aggregates/?region=10000002&types=${allItems
+  .map(({ id }) => id)
+  .join(",")}`
+
 export default function App() {
-  const allItems = (oresList as Id[]).concat(mineralsList)
-  const url = `https://market.fuzzwork.co.uk/aggregates/?region=10000002&types=${allItems
-    .map(({ id }) => id)
-    .join(",")}`
   const { data: priceMap, error } = useSWR(url, fetcher, {
     refreshInterval: 600_000, // 10 mins
     focusThrottleInterval: 60_000, // 1 min
   })
-
   const [state] = useOreFilters()
   const [sortField, setSortField] = useLocalStorageState("sortField", "buy")
   const [sortAsc, setSortAsc] = useLocalStorageState("sortAsc", false)
@@ -91,19 +70,13 @@ export default function App() {
     <DataTable
       title="Eve Harvest"
       columns={columns}
-      data={data
-        .filter((ore) => ore.bonus < 0.15)
-        .filter((ore) => state[ore.primaryOreId])}
+      data={data.filter((ore) => state[ore.primaryOreId])}
       theme="custom"
       customStyles={customStyles}
       defaultSortField={sortField}
       defaultSortAsc={sortAsc}
       onSort={(column, sortDirection) => {
-        setSortField(
-          ((column?.selector as string | undefined) ?? "")
-            .replace("display", "")
-            .toLowerCase(),
-        )
+        setSortField(column.selector as string)
         setSortAsc(sortDirection === "asc")
       }}
       subHeader

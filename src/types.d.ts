@@ -35,3 +35,18 @@ type Price = {
 type Prices = {
   [key: string]: Price
 }
+
+type OrePrice = {
+  id: number
+  name: string
+  group: string
+  bonus: number
+  color: string
+  primaryOreId: number
+  buy: number
+  mineralsBuy: number
+  perfectMineralsBuy: number
+  sell: number
+  mineralsSell: number
+  perfectMineralsSell: number
+}
