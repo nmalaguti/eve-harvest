@@ -1,4 +1,5 @@
-import { sortBy, uniq } from "lodash"
+import uniq from "lodash.uniq"
+import sortBy from "lodash.sortby"
 import oresList from "./ores.json"
 import { localeSort, numericSort } from "./sortFunctions"
 

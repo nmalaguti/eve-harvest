@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/nmalaguti/eve-harvest#readme",
   "devDependencies": {
-    "@types/lodash": "^4.14.157",
+    "@types/lodash.sortby": "^4.7.6",
+    "@types/lodash.uniq": "^4.5.6",
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
     "autoprefixer": "^9.8.5",
@@ -31,7 +32,8 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "lodash": "^4.17.19",
+    "lodash.sortby": "^4.7.0",
+    "lodash.uniq": "^4.5.0",
     "react": "^16.13.1",
     "react-data-table-component": "^6.9.7",
     "react-dom": "^16.13.1",
