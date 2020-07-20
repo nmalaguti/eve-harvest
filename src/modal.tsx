@@ -120,8 +120,14 @@ export function Modal({
           </p>
           <br />
           <p>
-            If you found this useful and would like to donate some ISK, please
-            send it to <strong className="text-red-800">Hiro Logos</strong>.
+            If you found this useful and would like to donate some ISK or
+            contact me in game, please reach out to{" "}
+            <strong>
+              <a href="https://evewho.com/pilot/Hiro+Logos">
+                <span className="text-red-800">Hiro Logos</span>
+              </a>
+            </strong>
+            .
           </p>
 
           <div className="flex justify-end pt-2">
