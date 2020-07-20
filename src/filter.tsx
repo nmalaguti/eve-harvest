@@ -5,23 +5,20 @@ import React from "react"
 import styled from "styled-components"
 
 export const oreButtons = primaryOres
-  .map(({ color }) => ({
-    [color]: {
-      enabled: styled.button`
-        background-color: ${color};
-        border-color: ${color};
-      `,
-      disabled: styled.button`
-        background-color: transparent;
-        border-color: ${color};
-        @media (hover: hover) and (pointer: fine) {
-          &:hover {
-            background-color: ${color};
-          }
-        }
-      `,
-    },
-  }))
+  .map(({ color }) => {
+    const borderColor = `border-color: ${color};`
+    return {
+      [color]: {
+        enabled: styled.button`
+          background-color: ${color};
+          ${borderColor}
+        `,
+        disabled: styled.button`
+          ${borderColor}
+        `,
+      },
+    }
+  })
   .reduce((a, b) => ({ ...a, ...b }), {})
 
 export const FilterButton: React.FunctionComponent<{
@@ -36,8 +33,8 @@ export const FilterButton: React.FunctionComponent<{
   return (
     <div className="text-center">
       <Button
-        className={`w-30 min-w-full whitespace-no-wrap bg-transparent font-semibold px-1 leading-tight border-2 rounded text-xs mt-1 mr-1 pointer:hover:text-gray-900 ${
-          enabled ? "text-gray-900 pointer:hover:bg-gray-300" : "text-gray-100"
+        className={`w-30 min-w-full whitespace-no-wrap bg-transparent font-semibold px-1 leading-tight border-2 rounded text-xs mt-1 mr-1 pointer:hover:text-gray-900 pointer:hover:bg-gray-300 pointer:hover:border-transparent ${
+          enabled ? "text-gray-900" : "text-gray-100"
         }`}
         {...props}
         onClick={onClick}

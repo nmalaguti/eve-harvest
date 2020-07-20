@@ -13,3 +13,16 @@ body {
   height: 32px;
   background-image: url("./GitHub-Mark-Light-32px.png");
 }
+
+.modal {
+  transition: opacity 0.25s ease;
+}
+
+.modal a {
+  @apply text-green-600;
+}
+
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}

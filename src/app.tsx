@@ -1,100 +1,45 @@
-import {
-  columns,
-  fetcher,
-  getMineralsPrice,
-  getOrePrice,
-  mineralsList,
-  ores,
-  oresList,
-} from "./data"
-import React, { useMemo } from "react"
-import useSWR from "swr"
-import { useOreFilters } from "./hooks"
-import useLocalStorageState from "use-local-storage-state"
-import { Loading } from "./loading"
-import DataTable from "react-data-table-component"
-import { customStyles } from "./theme"
-import { Filter } from "./filter"
-
-function dataFactory(priceMap: Prices | undefined) {
-  return (
-    priceMap &&
-    oresList
-      .filter((ore) => ore.bonus < 0.15)
-      .map((ore) => {
-        const { id, name, bonus, primaryOreId, color } = ore
-        const { name: group } = ores.get(primaryOreId)!
-        const buy = getOrePrice(priceMap, ore, "buy")
-        const mineralsBuy = getMineralsPrice(priceMap, ore, "buy")
-        const sell = getOrePrice(priceMap, ore, "sell")
-        const mineralsSell = getMineralsPrice(priceMap, ore, "sell")
-
-        return {
-          id,
-          name,
-          group,
-          bonus,
-          color,
-          primaryOreId,
-          buy,
-          mineralsBuy: mineralsBuy * 0.7,
-          perfectMineralsBuy: mineralsBuy * 0.8934,
-          sell,
-          mineralsSell: mineralsSell * 0.7,
-          perfectMineralsSell: mineralsSell * 0.8934,
-        }
-      })
-  )
-}
-
-const allItems = (oresList as Id[]).concat(mineralsList)
-const url = `https://market.fuzzwork.co.uk/aggregates/?region=10000002&types=${allItems
-  .map(({ id }) => id)
-  .join(",")}`
+import React, { useCallback, useMemo, useState } from "react"
+import { Modal } from "./modal"
+import { OreTable } from "./ore-table"
 
 export default function App() {
-  const { data: priceMap, error } = useSWR(url, fetcher, {
-    refreshInterval: 600_000, // 10 mins
-    focusThrottleInterval: 60_000, // 1 min
-  })
-  const [state] = useOreFilters()
-  const [sortField, setSortField] = useLocalStorageState("sortField", "buy")
-  const [sortAsc, setSortAsc] = useLocalStorageState("sortAsc", false)
+  const [visible, setVisible] = useState(false)
 
-  const data = useMemo(() => dataFactory(priceMap), [priceMap])
+  const showModal = useCallback(
+    (event) => {
+      event.preventDefault()
+      setVisible(true)
+    },
+    [setVisible],
+  )
 
-  if (error) return <div className="p-4">failed to load</div>
-  if (!data) return <Loading />
+  const hideModal = useCallback(() => {
+    setVisible(false)
+  }, [setVisible])
 
-  return (
-    <DataTable
-      title={
-        <a href="https://harvest.poisonreverse.net/" title="Eve Harvest">
-          Eve Harvest
-        </a>
-      }
-      columns={columns}
-      data={data.filter((ore) => state[ore.primaryOreId])}
-      theme="custom"
-      customStyles={customStyles}
-      defaultSortField={sortField}
-      defaultSortAsc={sortAsc}
-      onSort={(column, sortDirection) => {
-        setSortField(column.selector as string)
-        setSortAsc(sortDirection === "asc")
-      }}
-      actions={[
+  const actions = useMemo(
+    () => (
+      <>
+        <button
+          className="text-sm px-4 py-2 mx-2 font-semibold leading-none border rounded text-gray-100 border-gray-100 hover:border-transparent hover:bg-gray-100 hover:text-gray-900"
+          onClick={showModal}
+        >
+          About
+        </button>
         <a
           href="https://github.com/nmalaguti/eve-harvest"
           title="Eve Harvest on GitHub"
           className="github inline-block mx-2"
-        />,
-      ]}
-      subHeader
-      subHeaderAlign="center"
-      subHeaderComponent={<Filter />}
-      striped
-      highlightOnHover
-    />
+        />
+      </>
+    ),
+    [showModal],
+  )
+
+  return (
+    <>
+      <OreTable actions={actions} />
+      <Modal isOpen={visible} close={hideModal} />
+    </>
   )
 }
