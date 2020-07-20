@@ -68,7 +68,11 @@ export default function App() {
 
   return (
     <DataTable
-      title="Eve Harvest"
+      title={
+        <a href="https://harvest.poisonreverse.net/" title="Eve Harvest">
+          Eve Harvest
+        </a>
+      }
       columns={columns}
       data={data.filter((ore) => state[ore.primaryOreId])}
       theme="custom"
@@ -79,6 +83,13 @@ export default function App() {
         setSortField(column.selector as string)
         setSortAsc(sortDirection === "asc")
       }}
+      actions={[
+        <a
+          href="https://github.com/nmalaguti/eve-harvest"
+          title="Eve Harvest on GitHub"
+          className="github inline-block mx-2"
+        />,
+      ]}
       subHeader
       subHeaderAlign="center"
       subHeaderComponent={<Filter />}

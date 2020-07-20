@@ -7,3 +7,9 @@
 body {
   @apply bg-gray-900 text-gray-100 flex flex-col h-full min-h-screen;
 }
+
+.github {
+  width: 32px;
+  height: 32px;
+  background-image: url("./GitHub-Mark-Light-32px.png");
+}
