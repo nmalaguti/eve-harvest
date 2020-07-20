@@ -4,20 +4,35 @@ import { Icon } from "./icon"
 import React from "react"
 import styled from "styled-components"
 
+export const oreButtons = primaryOres
+  .map(({ color }) => ({
+    [color]: {
+      enabled: styled.button`
+        background-color: ${color};
+        border-color: ${color};
+      `,
+      disabled: styled.button`
+        background-color: transparent;
+        border-color: ${color};
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            background-color: ${color};
+          }
+        }
+      `,
+    },
+  }))
+  .reduce((a, b) => ({ ...a, ...b }), {})
+
 export const FilterButton: React.FunctionComponent<{
   onClick: any
   enabled: boolean
   color: string
 }> = ({ children, onClick, enabled, color, ...props }) => {
-  const Button = styled.button`
-    background-color: ${enabled ? color : "transparent"};
-    border-color: ${color};
-    @media (hover: hover) and (pointer: fine) {
-      &:hover {
-        ${enabled ? "" : `background-color: ${color}`};
-      }
-    }
-  `
+  const Button = enabled
+    ? oreButtons[color].enabled
+    : oreButtons[color].disabled
+
   return (
     <div className="text-center">
       <Button
