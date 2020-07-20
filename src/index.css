@@ -11,7 +11,8 @@ body {
 .github {
   width: 32px;
   height: 32px;
-  background-image: url("./GitHub-Mark-Light-32px.png");
+  background-image: url("./GitHub-Mark-Light-120px-plus.png");
+  background-size: contain;
 }
 
 .modal {
