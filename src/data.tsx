@@ -72,7 +72,13 @@ export const columns = [
     wrap: true,
     cell: (row: OrePrice) => (
       <div>
-        {row.name} <Bonus amount={row.bonus} />
+        <a
+          href={`https://evemarketer.com/types/${row.id}/history`}
+          title={`${row.name} Price History`}
+        >
+          {row.name}
+        </a>{" "}
+        <Bonus amount={row.bonus} />
       </div>
     ),
   },
@@ -85,11 +91,13 @@ export const columns = [
     wrap: true,
     cell: (row: OrePrice) => (
       <div>
-        <Icon
-          id={row.id}
-          name={row.name}
-          style={{ backgroundColor: row.color }}
-        />
+        <a href={`https://eveinfo.com/item/${row.id}/`}>
+          <Icon
+            id={row.id}
+            name={row.name}
+            style={{ backgroundColor: row.color }}
+          />
+        </a>
       </div>
     ),
   },
