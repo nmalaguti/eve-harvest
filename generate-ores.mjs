@@ -1,6 +1,5 @@
 import Database from "better-sqlite3"
 import ora from "ora"
-// @ts-ignore
 import bz2 from "unbzip2-stream"
 import fs from "fs"
 import https from "https"

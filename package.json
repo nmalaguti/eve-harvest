@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "rimraf dist .cache && npm run generate && parcel build src/index.html",
+    "build": "rimraf dist .cache && npm run generate && tsc --noEmit && parcel build src/index.html",
     "generate": "node generate-ores.mjs"
   },
   "repository": {
