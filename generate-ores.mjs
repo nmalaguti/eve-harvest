@@ -112,7 +112,7 @@ async function main() {
   const ores = Array.from(GROUPS.keys()).flatMap((id) => getOresStmt.all(id))
 
   ores.forEach((ore) => {
-    ore.color = GROUPS.get(ore.groupID)?.color
+    ore.color = GROUPS.get(ore.groupID).color
     ore.primaryOreId = oreGroupStmt.get(ore.id)
     const oreType = oreTypeStmt.get(ore.id)
     switch (oreType) {
