@@ -1,11 +1,11 @@
 import React, { useMemo } from "react"
+import uniq from "lodash.uniq"
 import useSWR from "swr"
 import {
   columns,
   fetcher,
   getMineralsPrice,
   getOrePrice,
-  mineralsList,
   ores,
   oresList,
 } from "./data"
@@ -47,7 +47,11 @@ function dataFactory(priceMap: Prices | undefined) {
   )
 }
 
-const allItems = (oresList as Id[]).concat(mineralsList)
+const allItems = (oresList as Id[]).concat(
+  uniq(oresList.flatMap((ore) => Object.keys(ore.minerals))).map((id) => ({
+    id: +id,
+  })),
+)
 const url = `https://market.fuzzwork.co.uk/aggregates/?region=10000002&types=${allItems
   .map(({ id }) => id)
   .join(",")}`

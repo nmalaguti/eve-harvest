@@ -8,7 +8,6 @@ import { Icon } from "./icon"
 import { IskM3 } from "./isk-m3"
 
 export { oresList }
-export { default as mineralsList } from "./minerals.json"
 
 export const ores: Map<number, Ore> = new Map(
   oresList.map((ore) => [ore.id, ore]),
