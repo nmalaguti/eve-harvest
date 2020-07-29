@@ -30,7 +30,7 @@ function BodyModalOpen({ close }: { close: () => void }) {
   return null
 }
 
-export function Modal({
+export default function Modal({
   isOpen,
   close,
 }: {

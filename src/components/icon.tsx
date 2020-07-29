@@ -1,6 +1,6 @@
 import React from "react"
 
-export const Icon = ({
+const Icon = ({
   id,
   name,
   className,
@@ -21,3 +21,5 @@ export const Icon = ({
     {...props}
   />
 )
+
+export default Icon

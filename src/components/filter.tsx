@@ -1,10 +1,10 @@
-import { useOreFilters } from "./hooks"
-import { primaryOres } from "./data"
-import { Icon } from "./icon"
+import { useOreFilters } from "../hooks"
+import { primaryOres } from "../data"
+import Icon from "./icon"
 import React from "react"
 import styled from "styled-components"
 
-export const oreButtons = primaryOres
+const oreButtons = primaryOres
   .map(({ color }) => {
     const borderColor = `border-color: ${color};`
     return {
@@ -21,7 +21,7 @@ export const oreButtons = primaryOres
   })
   .reduce((a, b) => ({ ...a, ...b }), {})
 
-export const FilterButton: React.FunctionComponent<{
+const FilterButton: React.FunctionComponent<{
   onClick: any
   enabled: boolean
   color: string
@@ -45,7 +45,7 @@ export const FilterButton: React.FunctionComponent<{
   )
 }
 
-export function Filter() {
+export default function Filter() {
   const [state, setState] = useOreFilters()
 
   return (

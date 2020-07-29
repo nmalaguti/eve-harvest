@@ -8,7 +8,7 @@ import tmp from "tmp"
 tmp.setGracefulCleanup()
 
 const SQLITE_FILE = tmp.tmpNameSync()
-const ORE_FILE = "./src/ores.json"
+const ORE_FILE = "./src/json/ores.json"
 
 const GROUPS = new Map([
   [450, { name: "Arkonor", color: "#c9aaae" }],

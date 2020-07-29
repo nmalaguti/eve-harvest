@@ -1,6 +1,7 @@
 import React, { useCallback, useMemo, useState } from "react"
-import { Modal } from "./modal"
-import { OreTable } from "./ore-table"
+import Modal from "./modal"
+import OreTable from "./ore-table"
+import { Prices } from "../hooks"
 
 export default function App() {
   const [visible, setVisible] = useState(false)
@@ -38,8 +39,10 @@ export default function App() {
 
   return (
     <>
-      <OreTable actions={actions} />
-      <Modal isOpen={visible} close={hideModal} />
+      <Prices.Provider>
+        <OreTable actions={actions} />
+        <Modal isOpen={visible} close={hideModal} />
+      </Prices.Provider>
     </>
   )
 }

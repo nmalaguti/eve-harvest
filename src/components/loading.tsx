@@ -1,8 +1,8 @@
 import React from "react"
 // @ts-ignore
-import rippleSpinner from "./ripple-spinner.svg"
+import rippleSpinner from "../images/ripple-spinner.svg"
 
-export const Loading = () => (
+const Loading = () => (
   <div className="p-4">
     <img
       src={rippleSpinner}
@@ -13,3 +13,5 @@ export const Loading = () => (
     loading...
   </div>
 )
+
+export default Loading
