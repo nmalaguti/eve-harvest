@@ -28,7 +28,7 @@ const GROUPS = new Map([
   [468, { name: "Mercoxit", color: "#de8d63" }],
   [469, { name: "Omber", color: "#fffb9d" }],
   [4029, { name: "Talassonite", color: "#c38553" }],
-  [4030, { name: "Rakovene", color: "#3f6a68" }],
+  [4030, { name: "Rakovene", color: "#7da4a8" }],
   [4031, { name: "Bezdnacine", color: "#c3bca8" }],
 ])
 
