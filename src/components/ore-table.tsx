@@ -79,8 +79,8 @@ const columns = [
     cell: (row: OrePrice) => (
       <div>
         <a
-          href={`https://evemarketer.com/types/${row.id}/history`}
-          title={`${row.name} Price History`}
+          href={`https://market.fuzzwork.co.uk/type/${row.id}/`}
+          title={`${row.name} Orders`}
         >
           {row.name}
         </a>{" "}
@@ -97,7 +97,7 @@ const columns = [
     wrap: true,
     cell: (row: OrePrice) => (
       <div>
-        <a href={`https://eveinfo.com/item/${row.id}/`}>
+        <a href={`https://everef.net/type/${row.id}/`}>
           <Icon
             id={row.id}
             name={row.name}

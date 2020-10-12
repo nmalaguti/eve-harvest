@@ -27,6 +27,9 @@ const GROUPS = new Map([
   [467, { name: "Gneiss", color: "#8cfb9d" }],
   [468, { name: "Mercoxit", color: "#de8d63" }],
   [469, { name: "Omber", color: "#fffb9d" }],
+  [4029, { name: "Talassonite", color: "#c38553" }],
+  [4030, { name: "Rakovene", color: "#3f6a68" }],
+  [4031, { name: "Bezdnacine", color: "#c3bca8" }],
 ])
 
 function downloadLatestDatabase() {
@@ -112,7 +115,7 @@ async function main() {
 
   ores.forEach((ore) => {
     ore.color = GROUPS.get(ore.groupID).color
-    ore.primaryOreId = oreGroupStmt.get(ore.id)
+    ore.primaryOreId = oreGroupStmt.get(ore.id) || ore.id
     const oreType = oreTypeStmt.get(ore.id)
     switch (oreType) {
       case 1:

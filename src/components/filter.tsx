@@ -90,7 +90,7 @@ export default function Filter() {
 
   return (
     <>
-      <div className="w-screen grid xs:grid-rows-4  xxl:grid-rows-1 lg:grid-rows-2 grid-rows-8 grid-flow-col col-gap-1">
+      <div className="w-screen grid grid-flow-row col-gap-1 xl:grid-cols-8 xxl:grid-cols-16 md:grid-cols-4 grid-cols-2">
         {primaryOres.map((ore) => (
           <OreFilterButton
             key={ore.id}
