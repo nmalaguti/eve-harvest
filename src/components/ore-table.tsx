@@ -1,5 +1,10 @@
 import React from "react"
-import { Prices, useOreFilters } from "../hooks"
+import {
+  Prices,
+  useOreFilters,
+  useBonusFilters,
+  useCompressedFilters,
+} from "../hooks"
 import useLocalStorageState from "use-local-storage-state"
 import Loading from "./loading"
 import DataTable from "react-data-table-component"
@@ -113,6 +118,8 @@ export default function OreTable({
 }) {
   const { data, error } = Prices.useContainer()
   const [oreFilters] = useOreFilters()
+  const [bonusFilters] = useBonusFilters()
+  const [compressedFilters] = useCompressedFilters()
   const [sortField, setSortField] = useLocalStorageState(
     "sortField",
     "buy.perm3",
@@ -130,7 +137,10 @@ export default function OreTable({
         </a>
       }
       columns={columns}
-      data={data.filter((ore) => oreFilters[ore.primaryOreId])}
+      data={data
+        .filter((ore) => oreFilters[ore.primaryOreId.toString()])
+        .filter((ore) => bonusFilters[ore.bonus.toString()])
+        .filter((ore) => compressedFilters[ore.compressed.toString()])}
       theme="custom"
       customStyles={customStyles}
       defaultSortField={sortField}

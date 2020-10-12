@@ -1,5 +1,5 @@
-import { useOreFilters } from "../hooks"
-import { primaryOres } from "../data"
+import { useOreFilters, useCompressedFilters, useBonusFilters } from "../hooks"
+import { primaryOres, oreBonuses } from "../data"
 import Icon from "./icon"
 import React from "react"
 import styled from "styled-components"
@@ -21,7 +21,7 @@ const oreButtons = primaryOres
   })
   .reduce((a, b) => ({ ...a, ...b }), {})
 
-const FilterButton: React.FunctionComponent<{
+const OreFilterButton: React.FunctionComponent<{
   onClick: any
   enabled: boolean
   color: string
@@ -45,26 +45,108 @@ const FilterButton: React.FunctionComponent<{
   )
 }
 
+const BonusFilterButton: React.FunctionComponent<{
+  onClick: any
+  enabled: boolean
+}> = ({ children, onClick, enabled, ...props }) => {
+  return (
+    <div className="text-center">
+      <button
+        className={`w-30 min-w-full border-green-300 whitespace-no-wrap bg-transparent font-semibold px-1 leading-tight border-2 rounded text-xs mt-1 mr-1 pointer:hover:text-gray-900 pointer:hover:bg-gray-300 pointer:hover:border-transparent ${
+          enabled ? "bg-green-300 text-green-900" : "text-gray-100"
+        }`}
+        {...props}
+        onClick={onClick}
+      >
+        {children}
+      </button>
+    </div>
+  )
+}
+
+const CompressedFilterButton: React.FunctionComponent<{
+  onClick: any
+  enabled: boolean
+}> = ({ children, onClick, enabled, ...props }) => {
+  return (
+    <div className="text-center">
+      <button
+        className={`w-30 min-w-full border-pink-300 whitespace-no-wrap bg-transparent font-semibold px-1 leading-tight border-2 rounded text-xs mt-1 mr-1 pointer:hover:text-gray-900 pointer:hover:bg-gray-300 pointer:hover:border-transparent ${
+          enabled ? "text-gray-900 bg-pink-300 " : "text-gray-100"
+        }`}
+        {...props}
+        onClick={onClick}
+      >
+        {children}
+      </button>
+    </div>
+  )
+}
+
 export default function Filter() {
-  const [state, setState] = useOreFilters()
+  const [oreState, setOreState] = useOreFilters()
+  const [bonusState, setBonusState] = useBonusFilters()
+  const [compressedState, setCompressedState] = useCompressedFilters()
 
   return (
-    <div className="w-screen xs:grid-rows-4 grid xxl:grid-rows-1 lg:grid-rows-2 grid-rows-8 grid-flow-col col-gap-1">
-      {primaryOres.map((ore) => (
-        <FilterButton
-          key={ore.id}
+    <>
+      <div className="w-screen grid xs:grid-rows-4  xxl:grid-rows-1 lg:grid-rows-2 grid-rows-8 grid-flow-col col-gap-1">
+        {primaryOres.map((ore) => (
+          <OreFilterButton
+            key={ore.id}
+            onClick={() =>
+              setOreState((prevState) => ({
+                ...prevState,
+                [ore.id]: !prevState[ore.id],
+              }))
+            }
+            enabled={oreState[ore.id]}
+            color={ore.color}
+          >
+            <Icon id={ore.id} name={ore.name} className={"w-6"} /> {ore.name}
+          </OreFilterButton>
+        ))}
+      </div>
+      <div className="w-screen grid grid-cols-3 col-gap-1">
+        {oreBonuses.map((bonus) => (
+          <BonusFilterButton
+            key={bonus}
+            onClick={() =>
+              setBonusState((prevState) => ({
+                ...prevState,
+                [bonus.toString()]: !prevState[bonus.toString()],
+              }))
+            }
+            enabled={bonusState[bonus]}
+          >
+            +{bonus * 100}%
+          </BonusFilterButton>
+        ))}
+      </div>
+      <div className="w-screen grid grid-cols-2 col-gap-1">
+        <CompressedFilterButton
           onClick={() =>
-            setState((prevState) => ({
+            setCompressedState((prevState) => ({
               ...prevState,
-              [ore.id]: !prevState[ore.id],
+              [false.toString()]: !prevState[false.toString()],
             }))
           }
-          enabled={state[ore.id]}
-          color={ore.color}
+          enabled={compressedState[false.toString()]}
         >
-          <Icon id={ore.id} name={ore.name} className={"w-6"} /> {ore.name}
-        </FilterButton>
-      ))}
-    </div>
+          Uncompressed
+        </CompressedFilterButton>
+        <CompressedFilterButton
+          onClick={() =>
+            setCompressedState((prevState) => ({
+              ...prevState,
+              [true.toString()]: !prevState[true.toString()],
+            }))
+          }
+          enabled={compressedState[true.toString()]}
+        >
+          Compressed
+        </CompressedFilterButton>
+      </div>
+    </>
   )
 }

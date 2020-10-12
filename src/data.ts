@@ -9,6 +9,10 @@ export const primaryOres: Ore[] = sortBy(
   (ore: Ore) => ore.name,
 )
 
+export const oreBonuses: number[] = sortBy(
+  uniq(oresList.map((ore) => ore.bonus)),
+)
+
 const getOrePrice = (
   priceMap: Prices,
   ore: Ore,
@@ -48,7 +52,7 @@ export function dataFactory(priceMap?: Prices) {
     oresList
       .filter((ore) => ore.bonus < 0.15)
       .map((ore) => {
-        const { id, name, bonus, primaryOreId, color } = ore
+        const { id, name, bonus, primaryOreId, color, compressAmount } = ore
         const { name: group } = ores.get(primaryOreId)!
         const buy = getOrePrice(priceMap, ore, "buy")
         const mineralsBuy = getMineralsPrice(priceMap, ore, "buy")
@@ -74,6 +78,7 @@ export function dataFactory(priceMap?: Prices) {
             minerals: mineralsSell * 0.7,
             perfectMinerals: mineralsSell * 0.8934,
           },
+          compressed: compressAmount === 100,
         }
       })
   )
