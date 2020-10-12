@@ -5,6 +5,9 @@ import uniq from "lodash.uniq"
 import useSWR from "swr"
 import { useMemo } from "react"
 import { createContainer } from "unstated-next"
+import flatMap from "array.prototype.flatmap"
+
+flatMap.shim()
 
 const initialFiltersState = primaryOres
   .map((ore) => ({ [ore.id.toString()]: true }))
