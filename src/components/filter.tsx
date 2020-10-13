@@ -1,10 +1,15 @@
-import { useOreFilters, useCompressedFilters, useBonusFilters } from "../hooks"
-import { primaryOres, oreBonuses } from "../data"
+import {
+  useOreFilters,
+  useCompressedFilters,
+  useBonusFilters,
+  useSecurityFilters,
+} from "../hooks"
+import { oreGroups, oreBonuses } from "../data"
 import Icon from "./icon"
 import React from "react"
 import styled from "styled-components"
 
-const oreButtons = primaryOres
+const oreButtons = oreGroups
   .map(({ color }) => {
     const borderColor = `border-color: ${color};`
     return {
@@ -83,27 +88,48 @@ const CompressedFilterButton: React.FunctionComponent<{
   )
 }
 
+const SecurityFilterButton: React.FunctionComponent<{
+  onClick: any
+  enabled: boolean
+}> = ({ children, onClick, enabled, ...props }) => {
+  return (
+    <div className="text-center">
+      <button
+        className={`w-30 min-w-full border-purple-300 whitespace-no-wrap bg-transparent font-semibold px-1 leading-tight border-2 rounded text-xs mt-1 mr-1 pointer:hover:text-gray-900 pointer:hover:bg-gray-300 pointer:hover:border-transparent ${
+          enabled ? "text-gray-900 bg-purple-300 " : "text-gray-100"
+        }`}
+        {...props}
+        onClick={onClick}
+      >
+        {children}
+      </button>
+    </div>
+  )
+}
+
 export default function Filter() {
   const [oreState, setOreState] = useOreFilters()
   const [bonusState, setBonusState] = useBonusFilters()
   const [compressedState, setCompressedState] = useCompressedFilters()
+  const [securityState, setSecurityState] = useSecurityFilters()
 
   return (
     <>
       <div className="w-screen grid grid-flow-row col-gap-1 xl:grid-cols-8 xxl:grid-cols-16 md:grid-cols-4 grid-cols-2">
-        {primaryOres.map((ore) => (
+        {oreGroups.map((group) => (
           <OreFilterButton
-            key={ore.id}
+            key={group.id}
             onClick={() =>
               setOreState((prevState) => ({
                 ...prevState,
-                [ore.id]: !prevState[ore.id],
+                [group.id.toString()]: !prevState[group.id.toString()],
               }))
             }
-            enabled={oreState[ore.id]}
-            color={ore.color}
+            enabled={oreState[group.id.toString()]}
+            color={group.color}
           >
-            <Icon id={ore.id} name={ore.name} className={"w-6"} /> {ore.name}
+            <Icon id={group.baseOreId} name={group.name} className={"w-6"} />{" "}
+            {group.name}
           </OreFilterButton>
         ))}
       </div>
@@ -117,7 +143,7 @@ export default function Filter() {
                 [bonus.toString()]: !prevState[bonus.toString()],
               }))
             }
-            enabled={bonusState[bonus]}
+            enabled={bonusState[bonus.toString()]}
           >
             +{bonus * 100}%
           </BonusFilterButton>
@@ -146,6 +172,21 @@ export default function Filter() {
         >
           Compressed
         </CompressedFilterButton>
+      </div>
+      <div className="w-screen grid grid-cols-4 col-gap-1">
+        {["Highsec", "Lowsec", "Nullsec", "Triglavian"].map((security) => (
+          <SecurityFilterButton
+            onClick={() =>
+              setSecurityState((prevState) => ({
+                ...prevState,
+                [security.toLowerCase()]: !prevState[security.toLowerCase()],
+              }))
+            }
+            enabled={securityState[security.toLowerCase()]}
+          >
+            {security}
+          </SecurityFilterButton>
+        ))}
       </div>
     </>
   )

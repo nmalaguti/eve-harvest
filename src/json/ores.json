@@ -1,1489 +1,2015 @@
 [
   {
     "id": 22,
+    "groupId": 450,
     "name": "Arkonor",
     "volume": 16,
     "refineAmount": 100,
     "color": "#c9aaae",
-    "primaryOreId": 22,
+    "groupName": "Arkonor",
     "bonus": 0,
     "minerals": {
-      "34": 22000,
-      "36": 2500,
-      "40": 320
+      "35": 3200,
+      "36": 1200,
+      "40": 120
     },
+    "availableIn": [
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17425,
+    "groupId": 450,
     "name": "Crimson Arkonor",
     "volume": 16,
     "refineAmount": 100,
     "color": "#c9aaae",
-    "primaryOreId": 22,
+    "groupName": "Arkonor",
     "bonus": 0.05,
     "minerals": {
-      "34": 23100,
-      "36": 2625,
-      "40": 336
+      "35": 3360,
+      "36": 1260,
+      "40": 126
     },
+    "availableIn": [
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17426,
+    "groupId": 450,
     "name": "Prime Arkonor",
     "volume": 16,
     "refineAmount": 100,
     "color": "#c9aaae",
-    "primaryOreId": 22,
+    "groupName": "Arkonor",
     "bonus": 0.1,
     "minerals": {
-      "34": 24200,
-      "36": 2750,
-      "40": 352
+      "35": 3520,
+      "36": 1320,
+      "40": 132
     },
+    "availableIn": [
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28367,
+    "groupId": 450,
     "name": "Compressed Arkonor",
     "volume": 8.8,
     "refineAmount": 1,
     "color": "#c9aaae",
-    "primaryOreId": 22,
+    "groupName": "Arkonor",
     "bonus": 0,
     "minerals": {
-      "34": 22000,
-      "36": 2500,
-      "40": 320
+      "35": 3200,
+      "36": 1200,
+      "40": 120
     },
+    "availableIn": [
+      "nullsec"
+    ],
+    "compressesFrom": 22,
     "compressAmount": 100
   },
   {
     "id": 28385,
+    "groupId": 450,
     "name": "Compressed Crimson Arkonor",
     "volume": 8.8,
     "refineAmount": 1,
     "color": "#c9aaae",
-    "primaryOreId": 22,
+    "groupName": "Arkonor",
     "bonus": 0.05,
     "minerals": {
-      "34": 23100,
-      "36": 2625,
-      "40": 336
+      "35": 3360,
+      "36": 1260,
+      "40": 126
     },
+    "availableIn": [
+      "nullsec"
+    ],
+    "compressesFrom": 17425,
     "compressAmount": 100
   },
   {
     "id": 28387,
+    "groupId": 450,
     "name": "Compressed Prime Arkonor",
     "volume": 8.8,
     "refineAmount": 1,
     "color": "#c9aaae",
-    "primaryOreId": 22,
+    "groupName": "Arkonor",
     "bonus": 0.1,
     "minerals": {
-      "34": 24200,
-      "36": 2750,
-      "40": 352
+      "35": 3520,
+      "36": 1320,
+      "40": 132
     },
+    "availableIn": [
+      "nullsec"
+    ],
+    "compressesFrom": 17426,
     "compressAmount": 100
   },
   {
     "id": 1223,
+    "groupId": 451,
     "name": "Bistot",
     "volume": 16,
     "refineAmount": 100,
     "color": "#5bda74",
-    "primaryOreId": 1223,
+    "groupName": "Bistot",
     "bonus": 0,
     "minerals": {
-      "35": 12000,
-      "39": 450,
-      "40": 100
+      "35": 3200,
+      "36": 1200,
+      "39": 160
     },
+    "availableIn": [
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17428,
+    "groupId": 451,
     "name": "Triclinic Bistot",
     "volume": 16,
     "refineAmount": 100,
     "color": "#5bda74",
-    "primaryOreId": 1223,
+    "groupName": "Bistot",
     "bonus": 0.05,
     "minerals": {
-      "35": 12600,
-      "39": 473,
-      "40": 105
+      "35": 3360,
+      "36": 1260,
+      "39": 168
     },
+    "availableIn": [
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17429,
+    "groupId": 451,
     "name": "Monoclinic Bistot",
     "volume": 16,
     "refineAmount": 100,
     "color": "#5bda74",
-    "primaryOreId": 1223,
+    "groupName": "Bistot",
     "bonus": 0.1,
     "minerals": {
-      "35": 13200,
-      "39": 495,
-      "40": 110
+      "35": 3520,
+      "36": 1320,
+      "39": 176
     },
+    "availableIn": [
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28388,
+    "groupId": 451,
     "name": "Compressed Bistot",
     "volume": 4.4,
     "refineAmount": 1,
     "color": "#5bda74",
-    "primaryOreId": 1223,
+    "groupName": "Bistot",
     "bonus": 0,
     "minerals": {
-      "35": 12000,
-      "39": 450,
-      "40": 100
+      "35": 3200,
+      "36": 1200,
+      "39": 160
     },
+    "availableIn": [
+      "nullsec"
+    ],
+    "compressesFrom": 1223,
     "compressAmount": 100
   },
   {
     "id": 28389,
+    "groupId": 451,
     "name": "Compressed Monoclinic Bistot",
     "volume": 4.4,
     "refineAmount": 1,
     "color": "#5bda74",
-    "primaryOreId": 1223,
+    "groupName": "Bistot",
     "bonus": 0.1,
     "minerals": {
-      "35": 13200,
-      "39": 495,
-      "40": 110
+      "35": 3520,
+      "36": 1320,
+      "39": 176
     },
+    "availableIn": [
+      "nullsec"
+    ],
+    "compressesFrom": 17429,
     "compressAmount": 100
   },
   {
     "id": 28390,
+    "groupId": 451,
     "name": "Compressed Triclinic Bistot",
     "volume": 4.4,
     "refineAmount": 1,
     "color": "#5bda74",
-    "primaryOreId": 1223,
+    "groupName": "Bistot",
     "bonus": 0.05,
     "minerals": {
-      "35": 12600,
-      "39": 473,
-      "40": 105
+      "35": 3360,
+      "36": 1260,
+      "39": 168
     },
+    "availableIn": [
+      "nullsec"
+    ],
+    "compressesFrom": 17428,
     "compressAmount": 100
   },
   {
     "id": 1225,
+    "groupId": 452,
     "name": "Crokite",
     "volume": 16,
     "refineAmount": 100,
     "color": "#fada6b",
-    "primaryOreId": 1225,
+    "groupName": "Crokite",
     "bonus": 0,
     "minerals": {
-      "34": 21000,
-      "38": 760,
-      "39": 135
+      "35": 800,
+      "36": 2000,
+      "38": 800
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17432,
+    "groupId": 452,
     "name": "Sharp Crokite",
     "volume": 16,
     "refineAmount": 100,
     "color": "#fada6b",
-    "primaryOreId": 1225,
+    "groupName": "Crokite",
     "bonus": 0.05,
     "minerals": {
-      "34": 22050,
-      "38": 798,
-      "39": 142
+      "35": 840,
+      "36": 2100,
+      "38": 840
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17433,
+    "groupId": 452,
     "name": "Crystalline Crokite",
     "volume": 16,
     "refineAmount": 100,
     "color": "#fada6b",
-    "primaryOreId": 1225,
+    "groupName": "Crokite",
     "bonus": 0.1,
     "minerals": {
-      "34": 23100,
-      "38": 836,
-      "39": 149
+      "35": 880,
+      "36": 2200,
+      "38": 880
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28391,
+    "groupId": 452,
     "name": "Compressed Crokite",
     "volume": 7.8100000000000005,
     "refineAmount": 1,
     "color": "#fada6b",
-    "primaryOreId": 1225,
+    "groupName": "Crokite",
     "bonus": 0,
     "minerals": {
-      "34": 21000,
-      "38": 760,
-      "39": 135
+      "35": 800,
+      "36": 2000,
+      "38": 800
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 1225,
     "compressAmount": 100
   },
   {
     "id": 28392,
+    "groupId": 452,
     "name": "Compressed Crystalline Crokite",
     "volume": 7.8100000000000005,
     "refineAmount": 1,
     "color": "#fada6b",
-    "primaryOreId": 1225,
+    "groupName": "Crokite",
     "bonus": 0.1,
     "minerals": {
-      "34": 23100,
-      "38": 836,
-      "39": 149
+      "35": 880,
+      "36": 2200,
+      "38": 880
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 17433,
     "compressAmount": 100
   },
   {
     "id": 28393,
+    "groupId": 452,
     "name": "Compressed Sharp Crokite",
     "volume": 7.8100000000000005,
     "refineAmount": 1,
     "color": "#fada6b",
-    "primaryOreId": 1225,
+    "groupName": "Crokite",
     "bonus": 0.05,
     "minerals": {
-      "34": 22050,
-      "38": 798,
-      "39": 142
+      "35": 840,
+      "36": 2100,
+      "38": 840
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 17432,
     "compressAmount": 100
   },
   {
     "id": 1232,
+    "groupId": 453,
     "name": "Dark Ochre",
     "volume": 8,
     "refineAmount": 100,
     "color": "#f7efc6",
-    "primaryOreId": 1232,
+    "groupName": "Dark Ochre",
     "bonus": 0,
     "minerals": {
-      "34": 10000,
-      "37": 1600,
-      "38": 120
+      "36": 1360,
+      "37": 1200,
+      "38": 320
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17436,
+    "groupId": 453,
     "name": "Onyx Ochre",
     "volume": 8,
     "refineAmount": 100,
     "color": "#f7efc6",
-    "primaryOreId": 1232,
+    "groupName": "Dark Ochre",
     "bonus": 0.05,
     "minerals": {
-      "34": 10500,
-      "37": 1680,
-      "38": 126
+      "36": 1428,
+      "37": 1260,
+      "38": 336
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17437,
+    "groupId": 453,
     "name": "Obsidian Ochre",
     "volume": 8,
     "refineAmount": 100,
     "color": "#f7efc6",
-    "primaryOreId": 1232,
+    "groupName": "Dark Ochre",
     "bonus": 0.1,
     "minerals": {
-      "34": 11000,
-      "37": 1760,
-      "38": 132
+      "36": 1496,
+      "37": 1320,
+      "38": 352
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28394,
+    "groupId": 453,
     "name": "Compressed Dark Ochre",
     "volume": 4.2,
     "refineAmount": 1,
     "color": "#f7efc6",
-    "primaryOreId": 1232,
+    "groupName": "Dark Ochre",
     "bonus": 0,
     "minerals": {
-      "34": 10000,
-      "37": 1600,
-      "38": 120
+      "36": 1360,
+      "37": 1200,
+      "38": 320
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 1232,
     "compressAmount": 100
   },
   {
     "id": 28395,
+    "groupId": 453,
     "name": "Compressed Obsidian Ochre",
     "volume": 4.2,
     "refineAmount": 1,
     "color": "#f7efc6",
-    "primaryOreId": 1232,
+    "groupName": "Dark Ochre",
     "bonus": 0.1,
     "minerals": {
-      "34": 11000,
-      "37": 1760,
-      "38": 132
+      "36": 1496,
+      "37": 1320,
+      "38": 352
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17437,
     "compressAmount": 100
   },
   {
     "id": 28396,
+    "groupId": 453,
     "name": "Compressed Onyx Ochre",
     "volume": 4.2,
     "refineAmount": 1,
     "color": "#f7efc6",
-    "primaryOreId": 1232,
+    "groupName": "Dark Ochre",
     "bonus": 0.05,
     "minerals": {
-      "34": 10500,
-      "37": 1680,
-      "38": 126
+      "36": 1428,
+      "37": 1260,
+      "38": 336
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17436,
     "compressAmount": 100
   },
   {
     "id": 21,
+    "groupId": 454,
     "name": "Hedbergite",
     "volume": 3,
     "refineAmount": 100,
     "color": "#86d4e2",
-    "primaryOreId": 21,
+    "groupName": "Hedbergite",
     "bonus": 0,
     "minerals": {
-      "35": 1000,
-      "37": 200,
-      "38": 100,
-      "39": 19
+      "35": 450,
+      "38": 120
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17440,
+    "groupId": 454,
     "name": "Vitric Hedbergite",
     "volume": 3,
     "refineAmount": 100,
     "color": "#86d4e2",
-    "primaryOreId": 21,
+    "groupName": "Hedbergite",
     "bonus": 0.05,
     "minerals": {
-      "35": 1050,
-      "37": 210,
-      "38": 105,
-      "39": 20
+      "35": 473,
+      "38": 126
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17441,
+    "groupId": 454,
     "name": "Glazed Hedbergite",
     "volume": 3,
     "refineAmount": 100,
     "color": "#86d4e2",
-    "primaryOreId": 21,
+    "groupName": "Hedbergite",
     "bonus": 0.1,
     "minerals": {
-      "35": 1100,
-      "37": 220,
-      "38": 110,
-      "39": 21
+      "35": 495,
+      "38": 132
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28400,
+    "groupId": 454,
     "name": "Compressed Glazed Hedbergite",
     "volume": 0.47,
     "refineAmount": 1,
     "color": "#86d4e2",
-    "primaryOreId": 21,
+    "groupName": "Hedbergite",
     "bonus": 0.1,
     "minerals": {
-      "35": 1100,
-      "37": 220,
-      "38": 110,
-      "39": 21
+      "35": 495,
+      "38": 132
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17441,
     "compressAmount": 100
   },
   {
     "id": 28401,
+    "groupId": 454,
     "name": "Compressed Hedbergite",
     "volume": 0.47,
     "refineAmount": 1,
     "color": "#86d4e2",
-    "primaryOreId": 21,
+    "groupName": "Hedbergite",
     "bonus": 0,
     "minerals": {
-      "35": 1000,
-      "37": 200,
-      "38": 100,
-      "39": 19
+      "35": 450,
+      "38": 120
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 21,
     "compressAmount": 100
   },
   {
     "id": 28402,
+    "groupId": 454,
     "name": "Compressed Vitric Hedbergite",
     "volume": 0.47,
     "refineAmount": 1,
     "color": "#86d4e2",
-    "primaryOreId": 21,
+    "groupName": "Hedbergite",
     "bonus": 0.05,
     "minerals": {
-      "35": 1050,
-      "37": 210,
-      "38": 105,
-      "39": 20
+      "35": 473,
+      "38": 126
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17440,
     "compressAmount": 100
   },
   {
     "id": 1231,
+    "groupId": 455,
     "name": "Hemorphite",
     "volume": 3,
     "refineAmount": 100,
     "color": "#a4c6dd",
-    "primaryOreId": 1231,
+    "groupName": "Hemorphite",
     "bonus": 0,
     "minerals": {
-      "34": 2200,
-      "37": 100,
-      "38": 120,
-      "39": 15
+      "37": 240,
+      "38": 90
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17444,
+    "groupId": 455,
     "name": "Vivid Hemorphite",
     "volume": 3,
     "refineAmount": 100,
     "color": "#a4c6dd",
-    "primaryOreId": 1231,
+    "groupName": "Hemorphite",
     "bonus": 0.05,
     "minerals": {
-      "34": 2310,
-      "37": 105,
-      "38": 126,
-      "39": 16
+      "37": 252,
+      "38": 95
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17445,
+    "groupId": 455,
     "name": "Radiant Hemorphite",
     "volume": 3,
     "refineAmount": 100,
     "color": "#a4c6dd",
-    "primaryOreId": 1231,
+    "groupName": "Hemorphite",
     "bonus": 0.1,
     "minerals": {
-      "34": 2420,
-      "37": 110,
-      "38": 132,
-      "39": 17
+      "37": 264,
+      "38": 99
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28403,
+    "groupId": 455,
     "name": "Compressed Hemorphite",
     "volume": 0.86,
     "refineAmount": 1,
     "color": "#a4c6dd",
-    "primaryOreId": 1231,
+    "groupName": "Hemorphite",
     "bonus": 0,
     "minerals": {
-      "34": 2200,
-      "37": 100,
-      "38": 120,
-      "39": 15
+      "37": 240,
+      "38": 90
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 1231,
     "compressAmount": 100
   },
   {
     "id": 28404,
+    "groupId": 455,
     "name": "Compressed Radiant Hemorphite",
     "volume": 0.86,
     "refineAmount": 1,
     "color": "#a4c6dd",
-    "primaryOreId": 1231,
+    "groupName": "Hemorphite",
     "bonus": 0.1,
     "minerals": {
-      "34": 2420,
-      "37": 110,
-      "38": 132,
-      "39": 17
+      "37": 264,
+      "38": 99
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17445,
     "compressAmount": 100
   },
   {
     "id": 28405,
+    "groupId": 455,
     "name": "Compressed Vivid Hemorphite",
     "volume": 0.86,
     "refineAmount": 1,
     "color": "#a4c6dd",
-    "primaryOreId": 1231,
+    "groupName": "Hemorphite",
     "bonus": 0.05,
     "minerals": {
-      "34": 2310,
-      "37": 105,
-      "38": 126,
-      "39": 16
+      "37": 252,
+      "38": 95
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17444,
     "compressAmount": 100
   },
   {
     "id": 1226,
+    "groupId": 456,
     "name": "Jaspet",
     "volume": 2,
     "refineAmount": 100,
     "color": "#9cc09c",
-    "primaryOreId": 1226,
+    "groupName": "Jaspet",
     "bonus": 0,
     "minerals": {
-      "36": 350,
-      "38": 75,
-      "39": 8
+      "36": 150,
+      "38": 50
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17448,
+    "groupId": 456,
     "name": "Pure Jaspet",
     "volume": 2,
     "refineAmount": 100,
     "color": "#9cc09c",
-    "primaryOreId": 1226,
+    "groupName": "Jaspet",
     "bonus": 0.05,
     "minerals": {
-      "36": 368,
-      "38": 79,
-      "39": 8
+      "36": 158,
+      "38": 53
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17449,
+    "groupId": 456,
     "name": "Pristine Jaspet",
     "volume": 2,
     "refineAmount": 100,
     "color": "#9cc09c",
-    "primaryOreId": 1226,
+    "groupName": "Jaspet",
     "bonus": 0.1,
     "minerals": {
-      "36": 385,
-      "38": 83,
-      "39": 9
+      "36": 165,
+      "38": 55
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28406,
+    "groupId": 456,
     "name": "Compressed Jaspet",
     "volume": 0.15,
     "refineAmount": 1,
     "color": "#9cc09c",
-    "primaryOreId": 1226,
+    "groupName": "Jaspet",
     "bonus": 0,
     "minerals": {
-      "36": 350,
-      "38": 75,
-      "39": 8
+      "36": 150,
+      "38": 50
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 1226,
     "compressAmount": 100
   },
   {
     "id": 28407,
+    "groupId": 456,
     "name": "Compressed Pristine Jaspet",
     "volume": 0.15,
     "refineAmount": 1,
     "color": "#9cc09c",
-    "primaryOreId": 1226,
+    "groupName": "Jaspet",
     "bonus": 0.1,
     "minerals": {
-      "36": 385,
-      "38": 83,
-      "39": 9
+      "36": 165,
+      "38": 55
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17449,
     "compressAmount": 100
   },
   {
     "id": 28408,
+    "groupId": 456,
     "name": "Compressed Pure Jaspet",
     "volume": 0.15,
     "refineAmount": 1,
     "color": "#9cc09c",
-    "primaryOreId": 1226,
+    "groupName": "Jaspet",
     "bonus": 0.05,
     "minerals": {
-      "36": 368,
-      "38": 79,
-      "39": 8
+      "36": 158,
+      "38": 53
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17448,
     "compressAmount": 100
   },
   {
     "id": 20,
+    "groupId": 457,
     "name": "Kernite",
     "volume": 1.2,
     "refineAmount": 100,
     "color": "#94dbd6",
-    "primaryOreId": 20,
+    "groupName": "Kernite",
     "bonus": 0,
     "minerals": {
-      "34": 134,
-      "36": 267,
-      "37": 134
+      "36": 60,
+      "37": 120
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17452,
+    "groupId": 457,
     "name": "Luminous Kernite",
     "volume": 1.2,
     "refineAmount": 100,
     "color": "#94dbd6",
-    "primaryOreId": 20,
+    "groupName": "Kernite",
     "bonus": 0.05,
     "minerals": {
-      "34": 141,
-      "36": 281,
-      "37": 141
+      "36": 63,
+      "37": 126
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17453,
+    "groupId": 457,
     "name": "Fiery Kernite",
     "volume": 1.2,
     "refineAmount": 100,
     "color": "#94dbd6",
-    "primaryOreId": 20,
+    "groupName": "Kernite",
     "bonus": 0.1,
     "minerals": {
-      "34": 148,
-      "36": 294,
-      "37": 148
+      "36": 66,
+      "37": 132
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28409,
+    "groupId": 457,
     "name": "Compressed Fiery Kernite",
     "volume": 0.19,
     "refineAmount": 1,
     "color": "#94dbd6",
-    "primaryOreId": 20,
+    "groupName": "Kernite",
     "bonus": 0.1,
     "minerals": {
-      "34": 148,
-      "36": 294,
-      "37": 148
+      "36": 66,
+      "37": 132
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 17453,
     "compressAmount": 100
   },
   {
     "id": 28410,
+    "groupId": 457,
     "name": "Compressed Kernite",
     "volume": 0.19,
     "refineAmount": 1,
     "color": "#94dbd6",
-    "primaryOreId": 20,
+    "groupName": "Kernite",
     "bonus": 0,
     "minerals": {
-      "34": 134,
-      "36": 267,
-      "37": 134
+      "36": 60,
+      "37": 120
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 20,
     "compressAmount": 100
   },
   {
     "id": 28411,
+    "groupId": 457,
     "name": "Compressed Luminous Kernite",
     "volume": 0.19,
     "refineAmount": 1,
     "color": "#94dbd6",
-    "primaryOreId": 20,
+    "groupName": "Kernite",
     "bonus": 0.05,
     "minerals": {
-      "34": 141,
-      "36": 281,
-      "37": 141
+      "36": 63,
+      "37": 126
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 17452,
     "compressAmount": 100
   },
   {
     "id": 18,
+    "groupId": 458,
     "name": "Plagioclase",
     "volume": 0.35,
     "refineAmount": 100,
     "color": "#c5ebc5",
-    "primaryOreId": 18,
+    "groupName": "Plagioclase",
     "bonus": 0,
     "minerals": {
-      "34": 107,
-      "35": 213,
-      "36": 107
+      "34": 175,
+      "36": 70
     },
+    "availableIn": [
+      "highsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17455,
+    "groupId": 458,
     "name": "Azure Plagioclase",
     "volume": 0.35,
     "refineAmount": 100,
     "color": "#c5ebc5",
-    "primaryOreId": 18,
+    "groupName": "Plagioclase",
     "bonus": 0.05,
     "minerals": {
-      "34": 113,
-      "35": 224,
-      "36": 113
+      "34": 184,
+      "36": 74
     },
+    "availableIn": [
+      "highsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17456,
+    "groupId": 458,
     "name": "Rich Plagioclase",
     "volume": 0.35,
     "refineAmount": 100,
     "color": "#c5ebc5",
-    "primaryOreId": 18,
+    "groupName": "Plagioclase",
     "bonus": 0.1,
     "minerals": {
-      "34": 118,
-      "35": 235,
-      "36": 118
+      "34": 193,
+      "36": 77
     },
+    "availableIn": [
+      "highsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28421,
+    "groupId": 458,
     "name": "Compressed Azure Plagioclase",
     "volume": 0.15,
     "refineAmount": 1,
     "color": "#c5ebc5",
-    "primaryOreId": 18,
+    "groupName": "Plagioclase",
     "bonus": 0.05,
     "minerals": {
-      "34": 113,
-      "35": 224,
-      "36": 113
+      "34": 184,
+      "36": 74
     },
+    "availableIn": [
+      "highsec"
+    ],
+    "compressesFrom": 17455,
     "compressAmount": 100
   },
   {
     "id": 28422,
+    "groupId": 458,
     "name": "Compressed Plagioclase",
     "volume": 0.15,
     "refineAmount": 1,
     "color": "#c5ebc5",
-    "primaryOreId": 18,
+    "groupName": "Plagioclase",
     "bonus": 0,
     "minerals": {
-      "34": 107,
-      "35": 213,
-      "36": 107
+      "34": 175,
+      "36": 70
     },
+    "availableIn": [
+      "highsec"
+    ],
+    "compressesFrom": 18,
     "compressAmount": 100
   },
   {
     "id": 28423,
+    "groupId": 458,
     "name": "Compressed Rich Plagioclase",
     "volume": 0.15,
     "refineAmount": 1,
     "color": "#c5ebc5",
-    "primaryOreId": 18,
+    "groupName": "Plagioclase",
     "bonus": 0.1,
     "minerals": {
-      "34": 118,
-      "35": 235,
-      "36": 118
+      "34": 193,
+      "36": 77
     },
+    "availableIn": [
+      "highsec"
+    ],
+    "compressesFrom": 17456,
     "compressAmount": 100
   },
   {
     "id": 1224,
+    "groupId": 459,
     "name": "Pyroxeres",
     "volume": 0.3,
     "refineAmount": 100,
     "color": "#f7efcb",
-    "primaryOreId": 1224,
+    "groupName": "Pyroxeres",
     "bonus": 0,
     "minerals": {
-      "34": 351,
-      "35": 25,
-      "36": 50,
-      "38": 5
+      "35": 90,
+      "36": 30
     },
+    "availableIn": [
+      "highsec",
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17459,
+    "groupId": 459,
     "name": "Solid Pyroxeres",
     "volume": 0.3,
     "refineAmount": 100,
     "color": "#f7efcb",
-    "primaryOreId": 1224,
+    "groupName": "Pyroxeres",
     "bonus": 0.05,
     "minerals": {
-      "34": 369,
-      "35": 26,
-      "36": 53,
-      "38": 5
+      "35": 95,
+      "36": 32
     },
+    "availableIn": [
+      "highsec",
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17460,
+    "groupId": 459,
     "name": "Viscous Pyroxeres",
     "volume": 0.3,
     "refineAmount": 100,
     "color": "#f7efcb",
-    "primaryOreId": 1224,
+    "groupName": "Pyroxeres",
     "bonus": 0.1,
     "minerals": {
-      "34": 387,
-      "35": 27,
-      "36": 55,
-      "38": 5
+      "35": 99,
+      "36": 33
     },
+    "availableIn": [
+      "highsec",
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28424,
+    "groupId": 459,
     "name": "Compressed Pyroxeres",
     "volume": 0.16,
     "refineAmount": 1,
     "color": "#f7efcb",
-    "primaryOreId": 1224,
+    "groupName": "Pyroxeres",
     "bonus": 0,
     "minerals": {
-      "34": 351,
-      "35": 25,
-      "36": 50,
-      "38": 5
+      "35": 90,
+      "36": 30
     },
+    "availableIn": [
+      "highsec",
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 1224,
     "compressAmount": 100
   },
   {
     "id": 28425,
+    "groupId": 459,
     "name": "Compressed Solid Pyroxeres",
     "volume": 0.16,
     "refineAmount": 1,
     "color": "#f7efcb",
-    "primaryOreId": 1224,
+    "groupName": "Pyroxeres",
     "bonus": 0.05,
     "minerals": {
-      "34": 369,
-      "35": 26,
-      "36": 53,
-      "38": 5
+      "35": 95,
+      "36": 32
     },
+    "availableIn": [
+      "highsec",
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 17459,
     "compressAmount": 100
   },
   {
     "id": 28426,
+    "groupId": 459,
     "name": "Compressed Viscous Pyroxeres",
     "volume": 0.16,
     "refineAmount": 1,
     "color": "#f7efcb",
-    "primaryOreId": 1224,
+    "groupName": "Pyroxeres",
     "bonus": 0.1,
     "minerals": {
-      "34": 387,
-      "35": 27,
-      "36": 55,
-      "38": 5
+      "35": 99,
+      "36": 33
     },
+    "availableIn": [
+      "highsec",
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 17460,
     "compressAmount": 100
   },
   {
     "id": 1228,
+    "groupId": 460,
     "name": "Scordite",
     "volume": 0.15,
     "refineAmount": 100,
     "color": "#c1c9bc",
-    "primaryOreId": 1228,
+    "groupName": "Scordite",
     "bonus": 0,
     "minerals": {
-      "34": 346,
-      "35": 173
+      "34": 150,
+      "35": 90
     },
+    "availableIn": [
+      "highsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17463,
+    "groupId": 460,
     "name": "Condensed Scordite",
     "volume": 0.15,
     "refineAmount": 100,
     "color": "#c1c9bc",
-    "primaryOreId": 1228,
+    "groupName": "Scordite",
     "bonus": 0.05,
     "minerals": {
-      "34": 364,
-      "35": 182
+      "34": 158,
+      "35": 95
     },
+    "availableIn": [
+      "highsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17464,
+    "groupId": 460,
     "name": "Massive Scordite",
     "volume": 0.15,
     "refineAmount": 100,
     "color": "#c1c9bc",
-    "primaryOreId": 1228,
+    "groupName": "Scordite",
     "bonus": 0.1,
     "minerals": {
-      "34": 381,
-      "35": 190
+      "34": 165,
+      "35": 99
     },
+    "availableIn": [
+      "highsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28427,
+    "groupId": 460,
     "name": "Compressed Condensed Scordite",
     "volume": 0.19,
     "refineAmount": 1,
     "color": "#c1c9bc",
-    "primaryOreId": 1228,
+    "groupName": "Scordite",
     "bonus": 0.05,
     "minerals": {
-      "34": 364,
-      "35": 182
+      "34": 158,
+      "35": 95
     },
+    "availableIn": [
+      "highsec"
+    ],
+    "compressesFrom": 17463,
     "compressAmount": 100
   },
   {
     "id": 28428,
+    "groupId": 460,
     "name": "Compressed Massive Scordite",
     "volume": 0.19,
     "refineAmount": 1,
     "color": "#c1c9bc",
-    "primaryOreId": 1228,
+    "groupName": "Scordite",
     "bonus": 0.1,
     "minerals": {
-      "34": 381,
-      "35": 190
+      "34": 165,
+      "35": 99
     },
+    "availableIn": [
+      "highsec"
+    ],
+    "compressesFrom": 17464,
     "compressAmount": 100
   },
   {
     "id": 28429,
+    "groupId": 460,
     "name": "Compressed Scordite",
     "volume": 0.19,
     "refineAmount": 1,
     "color": "#c1c9bc",
-    "primaryOreId": 1228,
+    "groupName": "Scordite",
     "bonus": 0,
     "minerals": {
-      "34": 346,
-      "35": 173
+      "34": 150,
+      "35": 90
     },
+    "availableIn": [
+      "highsec"
+    ],
+    "compressesFrom": 1228,
     "compressAmount": 100
   },
   {
     "id": 19,
+    "groupId": 461,
     "name": "Spodumain",
     "volume": 16,
     "refineAmount": 100,
     "color": "#ced77c",
-    "primaryOreId": 19,
+    "groupName": "Spodumain",
     "bonus": 0,
     "minerals": {
-      "34": 56000,
-      "35": 12050,
-      "36": 2100,
-      "37": 450
+      "34": 48000,
+      "37": 1000,
+      "38": 160,
+      "39": 80,
+      "40": 40
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17466,
+    "groupId": 461,
     "name": "Bright Spodumain",
     "volume": 16,
     "refineAmount": 100,
     "color": "#ced77c",
-    "primaryOreId": 19,
+    "groupName": "Spodumain",
     "bonus": 0.05,
     "minerals": {
-      "34": 58800,
-      "35": 12653,
-      "36": 2205,
-      "37": 473
+      "34": 50400,
+      "37": 1050,
+      "38": 168,
+      "39": 84,
+      "40": 42
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17467,
+    "groupId": 461,
     "name": "Gleaming Spodumain",
     "volume": 16,
     "refineAmount": 100,
     "color": "#ced77c",
-    "primaryOreId": 19,
+    "groupName": "Spodumain",
     "bonus": 0.1,
     "minerals": {
-      "34": 61600,
-      "35": 13255,
-      "36": 2310,
-      "37": 495
+      "34": 52800,
+      "37": 1100,
+      "38": 176,
+      "39": 88,
+      "40": 44
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28418,
+    "groupId": 461,
     "name": "Compressed Bright Spodumain",
     "volume": 28,
     "refineAmount": 1,
     "color": "#ced77c",
-    "primaryOreId": 19,
+    "groupName": "Spodumain",
     "bonus": 0.05,
     "minerals": {
-      "34": 58800,
-      "35": 12653,
-      "36": 2205,
-      "37": 473
+      "34": 50400,
+      "37": 1050,
+      "38": 168,
+      "39": 84,
+      "40": 42
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17466,
     "compressAmount": 100
   },
   {
     "id": 28419,
+    "groupId": 461,
     "name": "Compressed Gleaming Spodumain",
     "volume": 28,
     "refineAmount": 1,
     "color": "#ced77c",
-    "primaryOreId": 19,
+    "groupName": "Spodumain",
     "bonus": 0.1,
     "minerals": {
-      "34": 61600,
-      "35": 13255,
-      "36": 2310,
-      "37": 495
+      "34": 52800,
+      "37": 1100,
+      "38": 176,
+      "39": 88,
+      "40": 44
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17467,
     "compressAmount": 100
   },
   {
     "id": 28420,
+    "groupId": 461,
     "name": "Compressed Spodumain",
     "volume": 28,
     "refineAmount": 1,
     "color": "#ced77c",
-    "primaryOreId": 19,
+    "groupName": "Spodumain",
     "bonus": 0,
     "minerals": {
-      "34": 56000,
-      "35": 12050,
-      "36": 2100,
-      "37": 450
+      "34": 48000,
+      "37": 1000,
+      "38": 160,
+      "39": 80,
+      "40": 40
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 19,
     "compressAmount": 100
   },
   {
     "id": 1230,
+    "groupId": 462,
     "name": "Veldspar",
     "volume": 0.1,
     "refineAmount": 100,
     "color": "#d3b871",
-    "primaryOreId": 1230,
+    "groupName": "Veldspar",
     "bonus": 0,
     "minerals": {
-      "34": 415
+      "34": 400
     },
+    "availableIn": [
+      "highsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17470,
+    "groupId": 462,
     "name": "Concentrated Veldspar",
     "volume": 0.1,
     "refineAmount": 100,
     "color": "#d3b871",
-    "primaryOreId": 1230,
+    "groupName": "Veldspar",
     "bonus": 0.05,
     "minerals": {
-      "34": 436
+      "34": 420
     },
+    "availableIn": [
+      "highsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17471,
+    "groupId": 462,
     "name": "Dense Veldspar",
     "volume": 0.1,
     "refineAmount": 100,
     "color": "#d3b871",
-    "primaryOreId": 1230,
+    "groupName": "Veldspar",
     "bonus": 0.1,
     "minerals": {
-      "34": 457
+      "34": 440
     },
+    "availableIn": [
+      "highsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28430,
+    "groupId": 462,
     "name": "Compressed Concentrated Veldspar",
     "volume": 0.15,
     "refineAmount": 1,
     "color": "#d3b871",
-    "primaryOreId": 1230,
+    "groupName": "Veldspar",
     "bonus": 0.05,
     "minerals": {
-      "34": 436
+      "34": 420
     },
+    "availableIn": [
+      "highsec"
+    ],
+    "compressesFrom": 17470,
     "compressAmount": 100
   },
   {
     "id": 28431,
+    "groupId": 462,
     "name": "Compressed Dense Veldspar",
     "volume": 0.15,
     "refineAmount": 1,
     "color": "#d3b871",
-    "primaryOreId": 1230,
+    "groupName": "Veldspar",
     "bonus": 0.1,
     "minerals": {
-      "34": 457
+      "34": 440
     },
+    "availableIn": [
+      "highsec"
+    ],
+    "compressesFrom": 17471,
     "compressAmount": 100
   },
   {
     "id": 28432,
+    "groupId": 462,
     "name": "Compressed Veldspar",
     "volume": 0.15,
     "refineAmount": 1,
     "color": "#d3b871",
-    "primaryOreId": 1230,
+    "groupName": "Veldspar",
     "bonus": 0,
     "minerals": {
-      "34": 415
+      "34": 400
     },
+    "availableIn": [
+      "highsec"
+    ],
+    "compressesFrom": 1230,
     "compressAmount": 100
   },
   {
     "id": 1229,
+    "groupId": 467,
     "name": "Gneiss",
     "volume": 5,
     "refineAmount": 100,
     "color": "#8cfb9d",
-    "primaryOreId": 1229,
+    "groupName": "Gneiss",
     "bonus": 0,
     "minerals": {
-      "35": 2200,
-      "36": 2400,
-      "37": 300
+      "35": 2000,
+      "36": 1500,
+      "37": 800
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17865,
+    "groupId": 467,
     "name": "Iridescent Gneiss",
     "volume": 5,
     "refineAmount": 100,
     "color": "#8cfb9d",
-    "primaryOreId": 1229,
+    "groupName": "Gneiss",
     "bonus": 0.05,
     "minerals": {
-      "35": 2310,
-      "36": 2520,
-      "37": 315
+      "35": 2100,
+      "36": 1575,
+      "37": 840
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17866,
+    "groupId": 467,
     "name": "Prismatic Gneiss",
     "volume": 5,
     "refineAmount": 100,
     "color": "#8cfb9d",
-    "primaryOreId": 1229,
+    "groupName": "Gneiss",
     "bonus": 0.1,
     "minerals": {
-      "35": 2420,
-      "36": 2640,
-      "37": 330
+      "35": 2200,
+      "36": 1650,
+      "37": 880
     },
+    "availableIn": [
+      "lowsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28397,
+    "groupId": 467,
     "name": "Compressed Gneiss",
     "volume": 1.8,
     "refineAmount": 1,
     "color": "#8cfb9d",
-    "primaryOreId": 1229,
+    "groupName": "Gneiss",
     "bonus": 0,
     "minerals": {
-      "35": 2200,
-      "36": 2400,
-      "37": 300
+      "35": 2000,
+      "36": 1500,
+      "37": 800
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 1229,
     "compressAmount": 100
   },
   {
     "id": 28398,
+    "groupId": 467,
     "name": "Compressed Iridescent Gneiss",
     "volume": 1.8,
     "refineAmount": 1,
     "color": "#8cfb9d",
-    "primaryOreId": 1229,
+    "groupName": "Gneiss",
     "bonus": 0.05,
     "minerals": {
-      "35": 2310,
-      "36": 2520,
-      "37": 315
+      "35": 2100,
+      "36": 1575,
+      "37": 840
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17865,
     "compressAmount": 100
   },
   {
     "id": 28399,
+    "groupId": 467,
     "name": "Compressed Prismatic Gneiss",
     "volume": 1.8,
     "refineAmount": 1,
     "color": "#8cfb9d",
-    "primaryOreId": 1229,
+    "groupName": "Gneiss",
     "bonus": 0.1,
     "minerals": {
-      "35": 2420,
-      "36": 2640,
-      "37": 330
+      "35": 2200,
+      "36": 1650,
+      "37": 880
     },
+    "availableIn": [
+      "lowsec"
+    ],
+    "compressesFrom": 17866,
     "compressAmount": 100
   },
   {
     "id": 11396,
+    "groupId": 468,
     "name": "Mercoxit",
     "volume": 40,
     "refineAmount": 100,
     "color": "#de8d63",
-    "primaryOreId": 11396,
+    "groupName": "Mercoxit",
     "bonus": 0,
     "minerals": {
-      "11399": 300
+      "11399": 140
     },
+    "availableIn": [
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17869,
+    "groupId": 468,
     "name": "Magma Mercoxit",
     "volume": 40,
     "refineAmount": 100,
     "color": "#de8d63",
-    "primaryOreId": 11396,
+    "groupName": "Mercoxit",
     "bonus": 0.05,
     "minerals": {
-      "11399": 315
+      "11399": 147
     },
+    "availableIn": [
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17870,
+    "groupId": 468,
     "name": "Vitreous Mercoxit",
     "volume": 40,
     "refineAmount": 100,
     "color": "#de8d63",
-    "primaryOreId": 11396,
+    "groupName": "Mercoxit",
     "bonus": 0.1,
     "minerals": {
-      "11399": 330
+      "11399": 154
     },
+    "availableIn": [
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28412,
+    "groupId": 468,
     "name": "Compressed Magma Mercoxit",
     "volume": 0.1,
     "refineAmount": 1,
     "color": "#de8d63",
-    "primaryOreId": 11396,
+    "groupName": "Mercoxit",
     "bonus": 0.05,
     "minerals": {
-      "11399": 315
+      "11399": 147
     },
+    "availableIn": [
+      "nullsec"
+    ],
+    "compressesFrom": 17869,
     "compressAmount": 100
   },
   {
     "id": 28413,
+    "groupId": 468,
     "name": "Compressed Mercoxit",
     "volume": 0.1,
     "refineAmount": 1,
     "color": "#de8d63",
-    "primaryOreId": 11396,
+    "groupName": "Mercoxit",
     "bonus": 0,
     "minerals": {
-      "11399": 300
+      "11399": 140
     },
+    "availableIn": [
+      "nullsec"
+    ],
+    "compressesFrom": 11396,
     "compressAmount": 100
   },
   {
     "id": 28414,
+    "groupId": 468,
     "name": "Compressed Vitreous Mercoxit",
     "volume": 0.1,
     "refineAmount": 1,
     "color": "#de8d63",
-    "primaryOreId": 11396,
+    "groupName": "Mercoxit",
     "bonus": 0.1,
     "minerals": {
-      "11399": 330
+      "11399": 154
     },
+    "availableIn": [
+      "nullsec"
+    ],
+    "compressesFrom": 17870,
     "compressAmount": 100
   },
   {
     "id": 1227,
+    "groupId": 469,
     "name": "Omber",
     "volume": 0.6,
     "refineAmount": 100,
     "color": "#fffb9d",
-    "primaryOreId": 1227,
+    "groupName": "Omber",
     "bonus": 0,
     "minerals": {
-      "34": 800,
-      "35": 100,
-      "37": 85
+      "35": 90,
+      "37": 75
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17867,
+    "groupId": 469,
     "name": "Silvery Omber",
     "volume": 0.6,
     "refineAmount": 100,
     "color": "#fffb9d",
-    "primaryOreId": 1227,
+    "groupName": "Omber",
     "bonus": 0.05,
     "minerals": {
-      "34": 840,
-      "35": 105,
-      "37": 90
+      "35": 95,
+      "37": 79
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 17868,
+    "groupId": 469,
     "name": "Golden Omber",
     "volume": 0.6,
     "refineAmount": 100,
     "color": "#fffb9d",
-    "primaryOreId": 1227,
+    "groupName": "Omber",
     "bonus": 0.1,
     "minerals": {
-      "34": 880,
-      "35": 110,
-      "37": 94
+      "35": 99,
+      "37": 83
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
     "compressAmount": 1
   },
   {
     "id": 28415,
+    "groupId": 469,
     "name": "Compressed Golden Omber",
     "volume": 0.3,
     "refineAmount": 1,
     "color": "#fffb9d",
-    "primaryOreId": 1227,
+    "groupName": "Omber",
     "bonus": 0.1,
     "minerals": {
-      "34": 880,
-      "35": 110,
-      "37": 94
+      "35": 99,
+      "37": 83
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 17868,
     "compressAmount": 100
   },
   {
     "id": 28416,
+    "groupId": 469,
     "name": "Compressed Omber",
     "volume": 0.3,
     "refineAmount": 1,
     "color": "#fffb9d",
-    "primaryOreId": 1227,
+    "groupName": "Omber",
     "bonus": 0,
     "minerals": {
-      "34": 800,
-      "35": 100,
-      "37": 85
+      "35": 90,
+      "37": 75
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 1227,
     "compressAmount": 100
   },
   {
     "id": 28417,
+    "groupId": 469,
     "name": "Compressed Silvery Omber",
     "volume": 0.3,
     "refineAmount": 1,
     "color": "#fffb9d",
-    "primaryOreId": 1227,
+    "groupName": "Omber",
     "bonus": 0.05,
     "minerals": {
-      "34": 840,
-      "35": 105,
-      "37": 90
+      "35": 95,
+      "37": 79
     },
+    "availableIn": [
+      "lowsec",
+      "nullsec"
+    ],
+    "compressesFrom": 17867,
     "compressAmount": 100
   },
   {
     "id": 52306,
+    "groupId": 4029,
     "name": "Talassonite",
     "volume": 16,
     "refineAmount": 100,
     "color": "#c38553",
-    "primaryOreId": 52306,
+    "groupName": "Talassonite",
     "bonus": 0,
     "minerals": {
-      "34": 12600,
-      "38": 456,
-      "39": 81,
-      "40": 13
+      "34": 40000,
+      "38": 960,
+      "40": 32
     },
+    "availableIn": [
+      "triglavian"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 56625,
+    "groupId": 4029,
+    "name": "Abyssal Talassonite",
+    "volume": 16,
+    "refineAmount": 100,
+    "color": "#c38553",
+    "groupName": "Talassonite",
+    "bonus": 0.05,
+    "minerals": {
+      "34": 42000,
+      "38": 1008,
+      "40": 34
+    },
+    "availableIn": [
+      "triglavian"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 56626,
+    "groupId": 4029,
+    "name": "Hadal Talassonite",
+    "volume": 16,
+    "refineAmount": 100,
+    "color": "#c38553",
+    "groupName": "Talassonite",
+    "bonus": 0.1,
+    "minerals": {
+      "34": 44000,
+      "38": 1056,
+      "40": 35
+    },
+    "availableIn": [
+      "triglavian"
+    ],
     "compressAmount": 1
   },
   {
     "id": 52315,
+    "groupId": 4030,
     "name": "Rakovene",
     "volume": 16,
     "refineAmount": 100,
     "color": "#7da4a8",
-    "primaryOreId": 52315,
+    "groupName": "Rakovene",
     "bonus": 0,
     "minerals": {
-      "34": 2200,
-      "35": 7200,
-      "36": 855,
-      "38": 450,
-      "39": 270,
-      "40": 83,
-      "11399": 2
+      "34": 40000,
+      "37": 3200,
+      "39": 200
     },
+    "availableIn": [
+      "triglavian"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 56629,
+    "groupId": 4030,
+    "name": "Abyssal Rakovene",
+    "volume": 16,
+    "refineAmount": 100,
+    "color": "#7da4a8",
+    "groupName": "Rakovene",
+    "bonus": 0.05,
+    "minerals": {
+      "34": 42000,
+      "37": 3360,
+      "39": 210
+    },
+    "availableIn": [
+      "triglavian"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 56630,
+    "groupId": 4030,
+    "name": "Hadal Rakovene",
+    "volume": 16,
+    "refineAmount": 100,
+    "color": "#7da4a8",
+    "groupName": "Rakovene",
+    "bonus": 0.1,
+    "minerals": {
+      "34": 44000,
+      "37": 3520,
+      "39": 220
+    },
+    "availableIn": [
+      "triglavian"
+    ],
     "compressAmount": 1
   },
   {
     "id": 52316,
+    "groupId": 4031,
     "name": "Bezdnacine",
     "volume": 16,
     "refineAmount": 100,
     "color": "#c3bca8",
-    "primaryOreId": 52316,
+    "groupName": "Bezdnacine",
     "bonus": 0,
     "minerals": {
-      "34": 13200,
-      "35": 2200,
-      "36": 3780,
-      "37": 1100,
-      "40": 185,
-      "11399": 10
+      "34": 40000,
+      "37": 4800,
+      "40": 128
     },
+    "availableIn": [
+      "triglavian"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 56627,
+    "groupId": 4031,
+    "name": "Abyssal Bezdnacine",
+    "volume": 16,
+    "refineAmount": 100,
+    "color": "#c3bca8",
+    "groupName": "Bezdnacine",
+    "bonus": 0.05,
+    "minerals": {
+      "34": 42000,
+      "37": 5040,
+      "40": 134
+    },
+    "availableIn": [
+      "triglavian"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 56628,
+    "groupId": 4031,
+    "name": "Hadal Bezdnacine",
+    "volume": 16,
+    "refineAmount": 100,
+    "color": "#c3bca8",
+    "groupName": "Bezdnacine",
+    "bonus": 0.1,
+    "minerals": {
+      "34": 44000,
+      "37": 5280,
+      "40": 141
+    },
+    "availableIn": [
+      "triglavian"
+    ],
     "compressAmount": 1
   }
 ]

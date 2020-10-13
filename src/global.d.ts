@@ -5,11 +5,21 @@ type Ore = {
   refineAmount: number
   bonus: number
   name: string
-  primaryOreId: number
+  groupId: number
+  groupName: string
   color: string
+  compressesFrom?: number
   minerals: {
     [key: string]: number | undefined
   }
+  availableIn: string[]
+}
+
+type OreGroup = {
+  id: number
+  baseOreId: number
+  color: string
+  name: string
 }
 
 type Id = {
@@ -49,7 +59,6 @@ type OrePrice = {
   group: string
   bonus: number
   color: string
-  primaryOreId: number
   buy: BuySellPrice
   sell: BuySellPrice
 }

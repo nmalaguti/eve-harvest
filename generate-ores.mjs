@@ -7,29 +7,162 @@ import tmp from "tmp"
 
 tmp.setGracefulCleanup()
 
-const SQLITE_FILE = tmp.tmpNameSync()
+const SQLITE_FILE = "tmp_sde.sqlite"
 const ORE_FILE = "./src/json/ores.json"
 
 const GROUPS = new Map([
-  [450, { name: "Arkonor", color: "#c9aaae" }],
-  [451, { name: "Bistot", color: "#5bda74" }],
-  [452, { name: "Crokite", color: "#fada6b" }],
-  [453, { name: "Dark Ochre", color: "#f7efc6" }],
-  [454, { name: "Hedbergite", color: "#86d4e2" }],
-  [455, { name: "Hemorphite", color: "#a4c6dd" }],
-  [456, { name: "Jaspet", color: "#9cc09c" }],
-  [457, { name: "Kernite", color: "#94dbd6" }],
-  [458, { name: "Plagioclase", color: "#c5ebc5" }],
-  [459, { name: "Pyroxeres", color: "#f7efcb" }],
-  [460, { name: "Scordite", color: "#c1c9bc" }],
-  [461, { name: "Spodumain", color: "#ced77c" }],
-  [462, { name: "Veldspar", color: "#d3b871" }],
-  [467, { name: "Gneiss", color: "#8cfb9d" }],
-  [468, { name: "Mercoxit", color: "#de8d63" }],
-  [469, { name: "Omber", color: "#fffb9d" }],
-  [4029, { name: "Talassonite", color: "#c38553" }],
-  [4030, { name: "Rakovene", color: "#7da4a8" }],
-  [4031, { name: "Bezdnacine", color: "#c3bca8" }],
+  [
+    450,
+    {
+      name: "Arkonor",
+      color: "#c9aaae",
+      available: ["nullsec"],
+    },
+  ],
+  [
+    451,
+    {
+      name: "Bistot",
+      color: "#5bda74",
+      available: ["nullsec"],
+    },
+  ],
+  [
+    452,
+    {
+      name: "Crokite",
+      color: "#fada6b",
+      available: ["lowsec", "nullsec"],
+    },
+  ],
+  [
+    453,
+    {
+      name: "Dark Ochre",
+      color: "#f7efc6",
+      available: ["lowsec"],
+    },
+  ],
+  [
+    454,
+    {
+      name: "Hedbergite",
+      color: "#86d4e2",
+      available: ["lowsec"],
+    },
+  ],
+  [
+    455,
+    {
+      name: "Hemorphite",
+      color: "#a4c6dd",
+      available: ["lowsec"],
+    },
+  ],
+  [
+    456,
+    {
+      name: "Jaspet",
+      color: "#9cc09c",
+      available: ["lowsec"],
+    },
+  ],
+  [
+    457,
+    {
+      name: "Kernite",
+      color: "#94dbd6",
+      available: ["lowsec", "nullsec"],
+    },
+  ],
+  [
+    458,
+    {
+      name: "Plagioclase",
+      color: "#c5ebc5",
+      available: ["highsec"],
+    },
+  ],
+  [
+    459,
+    {
+      name: "Pyroxeres",
+      color: "#f7efcb",
+      available: ["highsec", "lowsec", "nullsec"],
+    },
+  ],
+  [
+    460,
+    {
+      name: "Scordite",
+      color: "#c1c9bc",
+      available: ["highsec"],
+    },
+  ],
+  [
+    461,
+    {
+      name: "Spodumain",
+      color: "#ced77c",
+      available: ["lowsec"],
+    },
+  ],
+  [
+    462,
+    {
+      name: "Veldspar",
+      color: "#d3b871",
+      available: ["highsec"],
+    },
+  ],
+  [
+    467,
+    {
+      name: "Gneiss",
+      color: "#8cfb9d",
+      available: ["lowsec"],
+    },
+  ],
+  [
+    468,
+    {
+      name: "Mercoxit",
+      color: "#de8d63",
+      available: ["nullsec"],
+    },
+  ],
+  [
+    469,
+    {
+      name: "Omber",
+      color: "#fffb9d",
+      available: ["lowsec", "nullsec"],
+    },
+  ],
+  [
+    4029,
+    {
+      name: "Talassonite",
+      color: "#c38553",
+      available: ["triglavian"],
+    },
+  ],
+  [
+    4030,
+    {
+      name: "Rakovene",
+      color: "#7da4a8",
+      available: ["triglavian"],
+    },
+  ],
+  [
+    4031,
+    {
+      name: "Bezdnacine",
+      color: "#c3bca8",
+      available: ["triglavian"],
+    },
+  ],
 ])
 
 function downloadLatestDatabase() {
@@ -67,7 +200,7 @@ async function main() {
   const db = new Database(SQLITE_FILE)
 
   const getOresStmt = db.prepare(
-    `SELECT typeID AS id, groupID, typeName AS name, volume, portionSize AS refineAmount
+    `SELECT typeID AS id, groupID as groupId, typeName AS name, volume, portionSize AS refineAmount
             FROM invTypes
             WHERE groupID = ? AND marketGroupID IS NOT NULL`,
   )
@@ -89,10 +222,9 @@ async function main() {
 
   const oreGroupStmt = db
     .prepare(
-      `SELECT valueFloat
-     FROM dgmTypeAttributes
-     WHERE attributeID = 2711
-     AND typeID = ?`,
+      `SELECT groupName
+     FROM invGroups
+     WHERE groupID = ?`,
     )
     .pluck()
 
@@ -114,8 +246,8 @@ async function main() {
   const ores = Array.from(GROUPS.keys()).flatMap((id) => getOresStmt.all(id))
 
   ores.forEach((ore) => {
-    ore.color = GROUPS.get(ore.groupID).color
-    ore.primaryOreId = oreGroupStmt.get(ore.id) || ore.id
+    ore.color = GROUPS.get(ore.groupId).color
+    ore.groupName = oreGroupStmt.get(ore.groupId)
     const oreType = oreTypeStmt.get(ore.id)
     switch (oreType) {
       case 1:
@@ -132,14 +264,22 @@ async function main() {
         break
     }
 
+    // Hardcoding some fixes for Triglavian Ores
+    // TODO: remove this hack once the SDE is correct
+    if (ore.name.startsWith("Abyssal ") && ore.bonus === 0) {
+      ore.bonus = 0.05
+    } else if (ore.name.startsWith("Hadal ") && ore.bonus === 0) {
+      ore.bonus = 0.1
+    }
+
     ore.minerals = materialsStmt.all(ore.id).reduce((obj, row) => {
       obj[row.materialTypeID] = row.quantity
       return obj
     }, {})
 
-    delete ore.groupID
+    ore.availableIn = GROUPS.get(ore.groupId).available
 
-    const compressesFrom = compressesFromStmt.get(ore.id)
+    const compressesFrom = (ore.compressesFrom = compressesFromStmt.get(ore.id))
     ore.compressAmount =
       (compressesFrom && getCompressionStmt.get(compressesFrom)) || 1
   })

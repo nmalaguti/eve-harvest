@@ -4,6 +4,7 @@ import {
   useOreFilters,
   useBonusFilters,
   useCompressedFilters,
+  useSecurityFilters,
 } from "../hooks"
 import useLocalStorageState from "use-local-storage-state"
 import Loading from "./loading"
@@ -97,7 +98,7 @@ const columns = [
     wrap: true,
     cell: (row: OrePrice) => (
       <div>
-        <a href={`https://everef.net/type/${row.id}/`}>
+        <a href={`https://everef.net/type/${row.id}`}>
           <Icon
             id={row.id}
             name={row.name}
@@ -120,6 +121,7 @@ export default function OreTable({
   const [oreFilters] = useOreFilters()
   const [bonusFilters] = useBonusFilters()
   const [compressedFilters] = useCompressedFilters()
+  const [securityFilters] = useSecurityFilters()
   const [sortField, setSortField] = useLocalStorageState(
     "sortField",
     "buy.perm3",
@@ -138,9 +140,10 @@ export default function OreTable({
       }
       columns={columns}
       data={data
-        .filter((ore) => oreFilters[ore.primaryOreId.toString()])
+        .filter((ore) => oreFilters[ore.groupId.toString()])
         .filter((ore) => bonusFilters[ore.bonus.toString()])
-        .filter((ore) => compressedFilters[ore.compressed.toString()])}
+        .filter((ore) => compressedFilters[ore.compressed.toString()])
+        .filter((ore) => ore.availableIn.some((available) => securityFilters[available]))}
       theme="custom"
       customStyles={customStyles}
       defaultSortField={sortField}

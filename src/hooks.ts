@@ -1,5 +1,5 @@
 import { createLocalStorageStateHook } from "use-local-storage-state"
-import { dataFactory, primaryOres, oreBonuses } from "./data"
+import { dataFactory, oreGroups, oreBonuses } from "./data"
 import oresList from "./json/ores.json"
 import uniq from "lodash.uniq"
 import useSWR from "swr"
@@ -9,8 +9,8 @@ import flatMap from "array.prototype.flatmap"
 
 flatMap.shim()
 
-const initialOreFiltersState = primaryOres
-  .map((ore) => ({ [ore.id.toString()]: true }))
+const initialOreFiltersState = oreGroups
+  .map((group) => ({ [group.id.toString()]: true }))
   .reduce((a, b) => ({ ...a, ...b }), {})
 
 export const useOreFilters = createLocalStorageStateHook(
@@ -35,6 +35,18 @@ const initialCompressedFiltersState: { [key: string]: boolean } = {
 export const useCompressedFilters = createLocalStorageStateHook(
   "compressedFilters",
   initialCompressedFiltersState,
+)
+
+const initialSecurityFiltersState: { [key: string]: boolean } = {
+  highsec: true,
+  lowsec: true,
+  nullsec: true,
+  trig: true,
+}
+
+export const useSecurityFilters = createLocalStorageStateHook(
+  "securityFilters",
+  initialSecurityFiltersState,
 )
 
 export const fetcher = (url: string) => fetch(url).then((res) => res.json())
