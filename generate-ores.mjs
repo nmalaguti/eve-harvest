@@ -7,7 +7,7 @@ import tmp from "tmp"
 
 tmp.setGracefulCleanup()
 
-const SQLITE_FILE = "tmp_sde.sqlite"
+const SQLITE_FILE = tmp.tmpNameSync()
 const ORE_FILE = "./src/json/ores.json"
 
 const GROUPS = new Map([
