@@ -41,7 +41,7 @@ const initialSecurityFiltersState: { [key: string]: boolean } = {
   highsec: true,
   lowsec: true,
   nullsec: true,
-  trig: true,
+  triglavian: true,
 }
 
 export const useSecurityFilters = createLocalStorageStateHook(
