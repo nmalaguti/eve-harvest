@@ -3,9 +3,9 @@ type Ore = {
   volume: number
   compressAmount: number
   refineAmount: number
-  bonus: number
+  asteroidType: string
+  bonus: string
   name: string
-  groupId: number
   groupName: string
   color: string
   compressesFrom?: number
@@ -16,7 +16,6 @@ type Ore = {
 }
 
 type OreGroup = {
-  id: number
   baseOreId: number
   color: string
   name: string
@@ -57,7 +56,7 @@ type OrePrice = {
   id: number
   name: string
   group: string
-  bonus: number
+  bonus: string
   color: string
   buy: BuySellPrice
   sell: BuySellPrice

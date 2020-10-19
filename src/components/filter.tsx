@@ -2,9 +2,9 @@ import {
   useOreFilters,
   useCompressedFilters,
   useBonusFilters,
-  useSecurityFilters,
+  useAvailabilityFilters,
 } from "../hooks"
-import { oreGroups, oreBonuses } from "../data"
+import { oreGroups } from "../data"
 import Icon from "./icon"
 import React from "react"
 import styled from "styled-components"
@@ -107,25 +107,33 @@ const SecurityFilterButton: React.FunctionComponent<{
   )
 }
 
-export default function Filter() {
+export default function Filter({
+  filterGroups,
+  filterBonuses,
+  filterAvailability,
+}: {
+  filterGroups: OreGroup[]
+  filterBonuses: string[]
+  filterAvailability: string[]
+}) {
   const [oreState, setOreState] = useOreFilters()
   const [bonusState, setBonusState] = useBonusFilters()
   const [compressedState, setCompressedState] = useCompressedFilters()
-  const [securityState, setSecurityState] = useSecurityFilters()
+  const [securityState, setAvailabilityState] = useAvailabilityFilters()
 
   return (
     <>
       <div className="w-screen grid grid-flow-row col-gap-1 xl:grid-cols-8 xxl:grid-cols-16 md:grid-cols-4 grid-cols-2">
-        {oreGroups.map((group) => (
+        {filterGroups.map((group) => (
           <OreFilterButton
-            key={group.id}
+            key={group.name}
             onClick={() =>
               setOreState((prevState) => ({
                 ...prevState,
-                [group.id.toString()]: !prevState[group.id.toString()],
+                [group.name]: !prevState[group.name],
               }))
             }
-            enabled={oreState[group.id.toString()]}
+            enabled={oreState[group.name]}
             color={group.color}
           >
             <Icon id={group.baseOreId} name={group.name} className={"w-6"} />{" "}
@@ -133,23 +141,23 @@ export default function Filter() {
           </OreFilterButton>
         ))}
       </div>
-      <div className="w-screen grid grid-cols-3 col-gap-1">
-        {oreBonuses.map((bonus) => (
+      <div className="w-screen grid grid-flow-col auto-cols-max col-gap-1">
+        {filterBonuses.map((bonus) => (
           <BonusFilterButton
             key={bonus}
             onClick={() =>
               setBonusState((prevState) => ({
                 ...prevState,
-                [bonus.toString()]: !prevState[bonus.toString()],
+                [bonus]: !prevState[bonus],
               }))
             }
-            enabled={bonusState[bonus.toString()]}
+            enabled={bonusState[bonus]}
           >
-            +{bonus * 100}%
+            {bonus}
           </BonusFilterButton>
         ))}
       </div>
-      <div className="w-screen grid grid-cols-2 col-gap-1">
+      <div className="w-screen grid grid-flow-col auto-cols-max col-gap-1">
         <CompressedFilterButton
           onClick={() =>
             setCompressedState((prevState) => ({
@@ -173,18 +181,19 @@ export default function Filter() {
           Compressed
         </CompressedFilterButton>
       </div>
-      <div className="w-screen grid grid-cols-4 col-gap-1">
-        {["Highsec", "Lowsec", "Nullsec", "Triglavian"].map((security) => (
+      <div className="w-screen grid grid-flow-col auto-cols-max col-gap-1">
+        {filterAvailability.map((availability) => (
           <SecurityFilterButton
+            key={availability}
             onClick={() =>
-              setSecurityState((prevState) => ({
+              setAvailabilityState((prevState) => ({
                 ...prevState,
-                [security.toLowerCase()]: !prevState[security.toLowerCase()],
+                [availability]: !prevState[availability],
               }))
             }
-            enabled={securityState[security.toLowerCase()]}
+            enabled={securityState[availability]}
           >
-            {security}
+            {availability}
           </SecurityFilterButton>
         ))}
       </div>

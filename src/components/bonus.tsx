@@ -1,9 +1,9 @@
 import React from "react"
 
-const Bonus = ({ amount }: { amount: number }) =>
-  amount > 0 ? (
+const Bonus = ({ bonus }: { bonus: string }) =>
+  bonus !== "0%" ? (
     <span className="px-2 ml-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-300 text-green-900">
-      +{amount * 100}%
+      {bonus}
     </span>
   ) : null
 

@@ -5,16 +5,17 @@
     "name": "Arkonor",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#c9aaae",
+    "asteroidType": "ore",
     "groupName": "Arkonor",
-    "bonus": 0,
+    "color": "#c9aaae",
+    "bonus": "0%",
     "minerals": {
       "35": 3200,
       "36": 1200,
       "40": 120
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -24,16 +25,17 @@
     "name": "Crimson Arkonor",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#c9aaae",
+    "asteroidType": "ore",
     "groupName": "Arkonor",
-    "bonus": 0.05,
+    "color": "#c9aaae",
+    "bonus": "5%",
     "minerals": {
       "35": 3360,
       "36": 1260,
       "40": 126
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -43,16 +45,17 @@
     "name": "Prime Arkonor",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#c9aaae",
+    "asteroidType": "ore",
     "groupName": "Arkonor",
-    "bonus": 0.1,
+    "color": "#c9aaae",
+    "bonus": "10%",
     "minerals": {
       "35": 3520,
       "36": 1320,
       "40": 132
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -62,16 +65,17 @@
     "name": "Compressed Arkonor",
     "volume": 8.8,
     "refineAmount": 1,
-    "color": "#c9aaae",
+    "asteroidType": "ore",
     "groupName": "Arkonor",
-    "bonus": 0,
+    "color": "#c9aaae",
+    "bonus": "0%",
     "minerals": {
       "35": 3200,
       "36": 1200,
       "40": 120
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressesFrom": 22,
     "compressAmount": 100
@@ -82,16 +86,17 @@
     "name": "Compressed Crimson Arkonor",
     "volume": 8.8,
     "refineAmount": 1,
-    "color": "#c9aaae",
+    "asteroidType": "ore",
     "groupName": "Arkonor",
-    "bonus": 0.05,
+    "color": "#c9aaae",
+    "bonus": "5%",
     "minerals": {
       "35": 3360,
       "36": 1260,
       "40": 126
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressesFrom": 17425,
     "compressAmount": 100
@@ -102,16 +107,17 @@
     "name": "Compressed Prime Arkonor",
     "volume": 8.8,
     "refineAmount": 1,
-    "color": "#c9aaae",
+    "asteroidType": "ore",
     "groupName": "Arkonor",
-    "bonus": 0.1,
+    "color": "#c9aaae",
+    "bonus": "10%",
     "minerals": {
       "35": 3520,
       "36": 1320,
       "40": 132
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressesFrom": 17426,
     "compressAmount": 100
@@ -122,16 +128,17 @@
     "name": "Bistot",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#5bda74",
+    "asteroidType": "ore",
     "groupName": "Bistot",
-    "bonus": 0,
+    "color": "#5bda74",
+    "bonus": "0%",
     "minerals": {
       "35": 3200,
       "36": 1200,
       "39": 160
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -141,16 +148,17 @@
     "name": "Triclinic Bistot",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#5bda74",
+    "asteroidType": "ore",
     "groupName": "Bistot",
-    "bonus": 0.05,
+    "color": "#5bda74",
+    "bonus": "5%",
     "minerals": {
       "35": 3360,
       "36": 1260,
       "39": 168
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -160,16 +168,17 @@
     "name": "Monoclinic Bistot",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#5bda74",
+    "asteroidType": "ore",
     "groupName": "Bistot",
-    "bonus": 0.1,
+    "color": "#5bda74",
+    "bonus": "10%",
     "minerals": {
       "35": 3520,
       "36": 1320,
       "39": 176
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -179,16 +188,17 @@
     "name": "Compressed Bistot",
     "volume": 4.4,
     "refineAmount": 1,
-    "color": "#5bda74",
+    "asteroidType": "ore",
     "groupName": "Bistot",
-    "bonus": 0,
+    "color": "#5bda74",
+    "bonus": "0%",
     "minerals": {
       "35": 3200,
       "36": 1200,
       "39": 160
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressesFrom": 1223,
     "compressAmount": 100
@@ -199,16 +209,17 @@
     "name": "Compressed Monoclinic Bistot",
     "volume": 4.4,
     "refineAmount": 1,
-    "color": "#5bda74",
+    "asteroidType": "ore",
     "groupName": "Bistot",
-    "bonus": 0.1,
+    "color": "#5bda74",
+    "bonus": "10%",
     "minerals": {
       "35": 3520,
       "36": 1320,
       "39": 176
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressesFrom": 17429,
     "compressAmount": 100
@@ -219,16 +230,17 @@
     "name": "Compressed Triclinic Bistot",
     "volume": 4.4,
     "refineAmount": 1,
-    "color": "#5bda74",
+    "asteroidType": "ore",
     "groupName": "Bistot",
-    "bonus": 0.05,
+    "color": "#5bda74",
+    "bonus": "5%",
     "minerals": {
       "35": 3360,
       "36": 1260,
       "39": 168
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressesFrom": 17428,
     "compressAmount": 100
@@ -239,17 +251,18 @@
     "name": "Crokite",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#fada6b",
+    "asteroidType": "ore",
     "groupName": "Crokite",
-    "bonus": 0,
+    "color": "#fada6b",
+    "bonus": "0%",
     "minerals": {
       "35": 800,
       "36": 2000,
       "38": 800
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -259,17 +272,18 @@
     "name": "Sharp Crokite",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#fada6b",
+    "asteroidType": "ore",
     "groupName": "Crokite",
-    "bonus": 0.05,
+    "color": "#fada6b",
+    "bonus": "5%",
     "minerals": {
       "35": 840,
       "36": 2100,
       "38": 840
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -279,17 +293,18 @@
     "name": "Crystalline Crokite",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#fada6b",
+    "asteroidType": "ore",
     "groupName": "Crokite",
-    "bonus": 0.1,
+    "color": "#fada6b",
+    "bonus": "10%",
     "minerals": {
       "35": 880,
       "36": 2200,
       "38": 880
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -299,17 +314,18 @@
     "name": "Compressed Crokite",
     "volume": 7.8100000000000005,
     "refineAmount": 1,
-    "color": "#fada6b",
+    "asteroidType": "ore",
     "groupName": "Crokite",
-    "bonus": 0,
+    "color": "#fada6b",
+    "bonus": "0%",
     "minerals": {
       "35": 800,
       "36": 2000,
       "38": 800
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 1225,
     "compressAmount": 100
@@ -320,17 +336,18 @@
     "name": "Compressed Crystalline Crokite",
     "volume": 7.8100000000000005,
     "refineAmount": 1,
-    "color": "#fada6b",
+    "asteroidType": "ore",
     "groupName": "Crokite",
-    "bonus": 0.1,
+    "color": "#fada6b",
+    "bonus": "10%",
     "minerals": {
       "35": 880,
       "36": 2200,
       "38": 880
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 17433,
     "compressAmount": 100
@@ -341,17 +358,18 @@
     "name": "Compressed Sharp Crokite",
     "volume": 7.8100000000000005,
     "refineAmount": 1,
-    "color": "#fada6b",
+    "asteroidType": "ore",
     "groupName": "Crokite",
-    "bonus": 0.05,
+    "color": "#fada6b",
+    "bonus": "5%",
     "minerals": {
       "35": 840,
       "36": 2100,
       "38": 840
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 17432,
     "compressAmount": 100
@@ -362,16 +380,17 @@
     "name": "Dark Ochre",
     "volume": 8,
     "refineAmount": 100,
-    "color": "#f7efc6",
+    "asteroidType": "ore",
     "groupName": "Dark Ochre",
-    "bonus": 0,
+    "color": "#f7efc6",
+    "bonus": "0%",
     "minerals": {
       "36": 1360,
       "37": 1200,
       "38": 320
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -381,16 +400,17 @@
     "name": "Onyx Ochre",
     "volume": 8,
     "refineAmount": 100,
-    "color": "#f7efc6",
+    "asteroidType": "ore",
     "groupName": "Dark Ochre",
-    "bonus": 0.05,
+    "color": "#f7efc6",
+    "bonus": "5%",
     "minerals": {
       "36": 1428,
       "37": 1260,
       "38": 336
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -400,16 +420,17 @@
     "name": "Obsidian Ochre",
     "volume": 8,
     "refineAmount": 100,
-    "color": "#f7efc6",
+    "asteroidType": "ore",
     "groupName": "Dark Ochre",
-    "bonus": 0.1,
+    "color": "#f7efc6",
+    "bonus": "10%",
     "minerals": {
       "36": 1496,
       "37": 1320,
       "38": 352
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -419,16 +440,17 @@
     "name": "Compressed Dark Ochre",
     "volume": 4.2,
     "refineAmount": 1,
-    "color": "#f7efc6",
+    "asteroidType": "ore",
     "groupName": "Dark Ochre",
-    "bonus": 0,
+    "color": "#f7efc6",
+    "bonus": "0%",
     "minerals": {
       "36": 1360,
       "37": 1200,
       "38": 320
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 1232,
     "compressAmount": 100
@@ -439,16 +461,17 @@
     "name": "Compressed Obsidian Ochre",
     "volume": 4.2,
     "refineAmount": 1,
-    "color": "#f7efc6",
+    "asteroidType": "ore",
     "groupName": "Dark Ochre",
-    "bonus": 0.1,
+    "color": "#f7efc6",
+    "bonus": "10%",
     "minerals": {
       "36": 1496,
       "37": 1320,
       "38": 352
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 17437,
     "compressAmount": 100
@@ -459,16 +482,17 @@
     "name": "Compressed Onyx Ochre",
     "volume": 4.2,
     "refineAmount": 1,
-    "color": "#f7efc6",
+    "asteroidType": "ore",
     "groupName": "Dark Ochre",
-    "bonus": 0.05,
+    "color": "#f7efc6",
+    "bonus": "5%",
     "minerals": {
       "36": 1428,
       "37": 1260,
       "38": 336
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 17436,
     "compressAmount": 100
@@ -479,15 +503,16 @@
     "name": "Hedbergite",
     "volume": 3,
     "refineAmount": 100,
-    "color": "#86d4e2",
+    "asteroidType": "ore",
     "groupName": "Hedbergite",
-    "bonus": 0,
+    "color": "#86d4e2",
+    "bonus": "0%",
     "minerals": {
       "35": 450,
       "38": 120
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -497,15 +522,16 @@
     "name": "Vitric Hedbergite",
     "volume": 3,
     "refineAmount": 100,
-    "color": "#86d4e2",
+    "asteroidType": "ore",
     "groupName": "Hedbergite",
-    "bonus": 0.05,
+    "color": "#86d4e2",
+    "bonus": "5%",
     "minerals": {
       "35": 473,
       "38": 126
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -515,15 +541,16 @@
     "name": "Glazed Hedbergite",
     "volume": 3,
     "refineAmount": 100,
-    "color": "#86d4e2",
+    "asteroidType": "ore",
     "groupName": "Hedbergite",
-    "bonus": 0.1,
+    "color": "#86d4e2",
+    "bonus": "10%",
     "minerals": {
       "35": 495,
       "38": 132
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -533,15 +560,16 @@
     "name": "Compressed Glazed Hedbergite",
     "volume": 0.47,
     "refineAmount": 1,
-    "color": "#86d4e2",
+    "asteroidType": "ore",
     "groupName": "Hedbergite",
-    "bonus": 0.1,
+    "color": "#86d4e2",
+    "bonus": "10%",
     "minerals": {
       "35": 495,
       "38": 132
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 17441,
     "compressAmount": 100
@@ -552,15 +580,16 @@
     "name": "Compressed Hedbergite",
     "volume": 0.47,
     "refineAmount": 1,
-    "color": "#86d4e2",
+    "asteroidType": "ore",
     "groupName": "Hedbergite",
-    "bonus": 0,
+    "color": "#86d4e2",
+    "bonus": "0%",
     "minerals": {
       "35": 450,
       "38": 120
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 21,
     "compressAmount": 100
@@ -571,15 +600,16 @@
     "name": "Compressed Vitric Hedbergite",
     "volume": 0.47,
     "refineAmount": 1,
-    "color": "#86d4e2",
+    "asteroidType": "ore",
     "groupName": "Hedbergite",
-    "bonus": 0.05,
+    "color": "#86d4e2",
+    "bonus": "5%",
     "minerals": {
       "35": 473,
       "38": 126
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 17440,
     "compressAmount": 100
@@ -590,15 +620,16 @@
     "name": "Hemorphite",
     "volume": 3,
     "refineAmount": 100,
-    "color": "#a4c6dd",
+    "asteroidType": "ore",
     "groupName": "Hemorphite",
-    "bonus": 0,
+    "color": "#a4c6dd",
+    "bonus": "0%",
     "minerals": {
       "37": 240,
       "38": 90
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -608,15 +639,16 @@
     "name": "Vivid Hemorphite",
     "volume": 3,
     "refineAmount": 100,
-    "color": "#a4c6dd",
+    "asteroidType": "ore",
     "groupName": "Hemorphite",
-    "bonus": 0.05,
+    "color": "#a4c6dd",
+    "bonus": "5%",
     "minerals": {
       "37": 252,
       "38": 95
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -626,15 +658,16 @@
     "name": "Radiant Hemorphite",
     "volume": 3,
     "refineAmount": 100,
-    "color": "#a4c6dd",
+    "asteroidType": "ore",
     "groupName": "Hemorphite",
-    "bonus": 0.1,
+    "color": "#a4c6dd",
+    "bonus": "10%",
     "minerals": {
       "37": 264,
       "38": 99
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -644,15 +677,16 @@
     "name": "Compressed Hemorphite",
     "volume": 0.86,
     "refineAmount": 1,
-    "color": "#a4c6dd",
+    "asteroidType": "ore",
     "groupName": "Hemorphite",
-    "bonus": 0,
+    "color": "#a4c6dd",
+    "bonus": "0%",
     "minerals": {
       "37": 240,
       "38": 90
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 1231,
     "compressAmount": 100
@@ -663,15 +697,16 @@
     "name": "Compressed Radiant Hemorphite",
     "volume": 0.86,
     "refineAmount": 1,
-    "color": "#a4c6dd",
+    "asteroidType": "ore",
     "groupName": "Hemorphite",
-    "bonus": 0.1,
+    "color": "#a4c6dd",
+    "bonus": "10%",
     "minerals": {
       "37": 264,
       "38": 99
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 17445,
     "compressAmount": 100
@@ -682,15 +717,16 @@
     "name": "Compressed Vivid Hemorphite",
     "volume": 0.86,
     "refineAmount": 1,
-    "color": "#a4c6dd",
+    "asteroidType": "ore",
     "groupName": "Hemorphite",
-    "bonus": 0.05,
+    "color": "#a4c6dd",
+    "bonus": "5%",
     "minerals": {
       "37": 252,
       "38": 95
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 17444,
     "compressAmount": 100
@@ -701,15 +737,16 @@
     "name": "Jaspet",
     "volume": 2,
     "refineAmount": 100,
-    "color": "#9cc09c",
+    "asteroidType": "ore",
     "groupName": "Jaspet",
-    "bonus": 0,
+    "color": "#9cc09c",
+    "bonus": "0%",
     "minerals": {
       "36": 150,
       "38": 50
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -719,15 +756,16 @@
     "name": "Pure Jaspet",
     "volume": 2,
     "refineAmount": 100,
-    "color": "#9cc09c",
+    "asteroidType": "ore",
     "groupName": "Jaspet",
-    "bonus": 0.05,
+    "color": "#9cc09c",
+    "bonus": "5%",
     "minerals": {
       "36": 158,
       "38": 53
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -737,15 +775,16 @@
     "name": "Pristine Jaspet",
     "volume": 2,
     "refineAmount": 100,
-    "color": "#9cc09c",
+    "asteroidType": "ore",
     "groupName": "Jaspet",
-    "bonus": 0.1,
+    "color": "#9cc09c",
+    "bonus": "10%",
     "minerals": {
       "36": 165,
       "38": 55
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -755,15 +794,16 @@
     "name": "Compressed Jaspet",
     "volume": 0.15,
     "refineAmount": 1,
-    "color": "#9cc09c",
+    "asteroidType": "ore",
     "groupName": "Jaspet",
-    "bonus": 0,
+    "color": "#9cc09c",
+    "bonus": "0%",
     "minerals": {
       "36": 150,
       "38": 50
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 1226,
     "compressAmount": 100
@@ -774,15 +814,16 @@
     "name": "Compressed Pristine Jaspet",
     "volume": 0.15,
     "refineAmount": 1,
-    "color": "#9cc09c",
+    "asteroidType": "ore",
     "groupName": "Jaspet",
-    "bonus": 0.1,
+    "color": "#9cc09c",
+    "bonus": "10%",
     "minerals": {
       "36": 165,
       "38": 55
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 17449,
     "compressAmount": 100
@@ -793,15 +834,16 @@
     "name": "Compressed Pure Jaspet",
     "volume": 0.15,
     "refineAmount": 1,
-    "color": "#9cc09c",
+    "asteroidType": "ore",
     "groupName": "Jaspet",
-    "bonus": 0.05,
+    "color": "#9cc09c",
+    "bonus": "5%",
     "minerals": {
       "36": 158,
       "38": 53
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 17448,
     "compressAmount": 100
@@ -812,16 +854,17 @@
     "name": "Kernite",
     "volume": 1.2,
     "refineAmount": 100,
-    "color": "#94dbd6",
+    "asteroidType": "ore",
     "groupName": "Kernite",
-    "bonus": 0,
+    "color": "#94dbd6",
+    "bonus": "0%",
     "minerals": {
       "36": 60,
       "37": 120
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -831,16 +874,17 @@
     "name": "Luminous Kernite",
     "volume": 1.2,
     "refineAmount": 100,
-    "color": "#94dbd6",
+    "asteroidType": "ore",
     "groupName": "Kernite",
-    "bonus": 0.05,
+    "color": "#94dbd6",
+    "bonus": "5%",
     "minerals": {
       "36": 63,
       "37": 126
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -850,16 +894,17 @@
     "name": "Fiery Kernite",
     "volume": 1.2,
     "refineAmount": 100,
-    "color": "#94dbd6",
+    "asteroidType": "ore",
     "groupName": "Kernite",
-    "bonus": 0.1,
+    "color": "#94dbd6",
+    "bonus": "10%",
     "minerals": {
       "36": 66,
       "37": 132
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -869,16 +914,17 @@
     "name": "Compressed Fiery Kernite",
     "volume": 0.19,
     "refineAmount": 1,
-    "color": "#94dbd6",
+    "asteroidType": "ore",
     "groupName": "Kernite",
-    "bonus": 0.1,
+    "color": "#94dbd6",
+    "bonus": "10%",
     "minerals": {
       "36": 66,
       "37": 132
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 17453,
     "compressAmount": 100
@@ -889,16 +935,17 @@
     "name": "Compressed Kernite",
     "volume": 0.19,
     "refineAmount": 1,
-    "color": "#94dbd6",
+    "asteroidType": "ore",
     "groupName": "Kernite",
-    "bonus": 0,
+    "color": "#94dbd6",
+    "bonus": "0%",
     "minerals": {
       "36": 60,
       "37": 120
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 20,
     "compressAmount": 100
@@ -909,16 +956,17 @@
     "name": "Compressed Luminous Kernite",
     "volume": 0.19,
     "refineAmount": 1,
-    "color": "#94dbd6",
+    "asteroidType": "ore",
     "groupName": "Kernite",
-    "bonus": 0.05,
+    "color": "#94dbd6",
+    "bonus": "5%",
     "minerals": {
       "36": 63,
       "37": 126
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 17452,
     "compressAmount": 100
@@ -929,15 +977,16 @@
     "name": "Plagioclase",
     "volume": 0.35,
     "refineAmount": 100,
-    "color": "#c5ebc5",
+    "asteroidType": "ore",
     "groupName": "Plagioclase",
-    "bonus": 0,
+    "color": "#c5ebc5",
+    "bonus": "0%",
     "minerals": {
       "34": 175,
       "36": 70
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressAmount": 1
   },
@@ -947,15 +996,16 @@
     "name": "Azure Plagioclase",
     "volume": 0.35,
     "refineAmount": 100,
-    "color": "#c5ebc5",
+    "asteroidType": "ore",
     "groupName": "Plagioclase",
-    "bonus": 0.05,
+    "color": "#c5ebc5",
+    "bonus": "5%",
     "minerals": {
       "34": 184,
       "36": 74
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressAmount": 1
   },
@@ -965,15 +1015,16 @@
     "name": "Rich Plagioclase",
     "volume": 0.35,
     "refineAmount": 100,
-    "color": "#c5ebc5",
+    "asteroidType": "ore",
     "groupName": "Plagioclase",
-    "bonus": 0.1,
+    "color": "#c5ebc5",
+    "bonus": "10%",
     "minerals": {
       "34": 193,
       "36": 77
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressAmount": 1
   },
@@ -983,15 +1034,16 @@
     "name": "Compressed Azure Plagioclase",
     "volume": 0.15,
     "refineAmount": 1,
-    "color": "#c5ebc5",
+    "asteroidType": "ore",
     "groupName": "Plagioclase",
-    "bonus": 0.05,
+    "color": "#c5ebc5",
+    "bonus": "5%",
     "minerals": {
       "34": 184,
       "36": 74
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressesFrom": 17455,
     "compressAmount": 100
@@ -1002,15 +1054,16 @@
     "name": "Compressed Plagioclase",
     "volume": 0.15,
     "refineAmount": 1,
-    "color": "#c5ebc5",
+    "asteroidType": "ore",
     "groupName": "Plagioclase",
-    "bonus": 0,
+    "color": "#c5ebc5",
+    "bonus": "0%",
     "minerals": {
       "34": 175,
       "36": 70
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressesFrom": 18,
     "compressAmount": 100
@@ -1021,15 +1074,16 @@
     "name": "Compressed Rich Plagioclase",
     "volume": 0.15,
     "refineAmount": 1,
-    "color": "#c5ebc5",
+    "asteroidType": "ore",
     "groupName": "Plagioclase",
-    "bonus": 0.1,
+    "color": "#c5ebc5",
+    "bonus": "10%",
     "minerals": {
       "34": 193,
       "36": 77
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressesFrom": 17456,
     "compressAmount": 100
@@ -1040,17 +1094,18 @@
     "name": "Pyroxeres",
     "volume": 0.3,
     "refineAmount": 100,
-    "color": "#f7efcb",
+    "asteroidType": "ore",
     "groupName": "Pyroxeres",
-    "bonus": 0,
+    "color": "#f7efcb",
+    "bonus": "0%",
     "minerals": {
       "35": 90,
       "36": 30
     },
     "availableIn": [
-      "highsec",
-      "lowsec",
-      "nullsec"
+      "Highsec",
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -1060,17 +1115,18 @@
     "name": "Solid Pyroxeres",
     "volume": 0.3,
     "refineAmount": 100,
-    "color": "#f7efcb",
+    "asteroidType": "ore",
     "groupName": "Pyroxeres",
-    "bonus": 0.05,
+    "color": "#f7efcb",
+    "bonus": "5%",
     "minerals": {
       "35": 95,
       "36": 32
     },
     "availableIn": [
-      "highsec",
-      "lowsec",
-      "nullsec"
+      "Highsec",
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -1080,17 +1136,18 @@
     "name": "Viscous Pyroxeres",
     "volume": 0.3,
     "refineAmount": 100,
-    "color": "#f7efcb",
+    "asteroidType": "ore",
     "groupName": "Pyroxeres",
-    "bonus": 0.1,
+    "color": "#f7efcb",
+    "bonus": "10%",
     "minerals": {
       "35": 99,
       "36": 33
     },
     "availableIn": [
-      "highsec",
-      "lowsec",
-      "nullsec"
+      "Highsec",
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -1100,17 +1157,18 @@
     "name": "Compressed Pyroxeres",
     "volume": 0.16,
     "refineAmount": 1,
-    "color": "#f7efcb",
+    "asteroidType": "ore",
     "groupName": "Pyroxeres",
-    "bonus": 0,
+    "color": "#f7efcb",
+    "bonus": "0%",
     "minerals": {
       "35": 90,
       "36": 30
     },
     "availableIn": [
-      "highsec",
-      "lowsec",
-      "nullsec"
+      "Highsec",
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 1224,
     "compressAmount": 100
@@ -1121,17 +1179,18 @@
     "name": "Compressed Solid Pyroxeres",
     "volume": 0.16,
     "refineAmount": 1,
-    "color": "#f7efcb",
+    "asteroidType": "ore",
     "groupName": "Pyroxeres",
-    "bonus": 0.05,
+    "color": "#f7efcb",
+    "bonus": "5%",
     "minerals": {
       "35": 95,
       "36": 32
     },
     "availableIn": [
-      "highsec",
-      "lowsec",
-      "nullsec"
+      "Highsec",
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 17459,
     "compressAmount": 100
@@ -1142,17 +1201,18 @@
     "name": "Compressed Viscous Pyroxeres",
     "volume": 0.16,
     "refineAmount": 1,
-    "color": "#f7efcb",
+    "asteroidType": "ore",
     "groupName": "Pyroxeres",
-    "bonus": 0.1,
+    "color": "#f7efcb",
+    "bonus": "10%",
     "minerals": {
       "35": 99,
       "36": 33
     },
     "availableIn": [
-      "highsec",
-      "lowsec",
-      "nullsec"
+      "Highsec",
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 17460,
     "compressAmount": 100
@@ -1163,15 +1223,16 @@
     "name": "Scordite",
     "volume": 0.15,
     "refineAmount": 100,
-    "color": "#c1c9bc",
+    "asteroidType": "ore",
     "groupName": "Scordite",
-    "bonus": 0,
+    "color": "#c1c9bc",
+    "bonus": "0%",
     "minerals": {
       "34": 150,
       "35": 90
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressAmount": 1
   },
@@ -1181,15 +1242,16 @@
     "name": "Condensed Scordite",
     "volume": 0.15,
     "refineAmount": 100,
-    "color": "#c1c9bc",
+    "asteroidType": "ore",
     "groupName": "Scordite",
-    "bonus": 0.05,
+    "color": "#c1c9bc",
+    "bonus": "5%",
     "minerals": {
       "34": 158,
       "35": 95
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressAmount": 1
   },
@@ -1199,15 +1261,16 @@
     "name": "Massive Scordite",
     "volume": 0.15,
     "refineAmount": 100,
-    "color": "#c1c9bc",
+    "asteroidType": "ore",
     "groupName": "Scordite",
-    "bonus": 0.1,
+    "color": "#c1c9bc",
+    "bonus": "10%",
     "minerals": {
       "34": 165,
       "35": 99
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressAmount": 1
   },
@@ -1217,15 +1280,16 @@
     "name": "Compressed Condensed Scordite",
     "volume": 0.19,
     "refineAmount": 1,
-    "color": "#c1c9bc",
+    "asteroidType": "ore",
     "groupName": "Scordite",
-    "bonus": 0.05,
+    "color": "#c1c9bc",
+    "bonus": "5%",
     "minerals": {
       "34": 158,
       "35": 95
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressesFrom": 17463,
     "compressAmount": 100
@@ -1236,15 +1300,16 @@
     "name": "Compressed Massive Scordite",
     "volume": 0.19,
     "refineAmount": 1,
-    "color": "#c1c9bc",
+    "asteroidType": "ore",
     "groupName": "Scordite",
-    "bonus": 0.1,
+    "color": "#c1c9bc",
+    "bonus": "10%",
     "minerals": {
       "34": 165,
       "35": 99
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressesFrom": 17464,
     "compressAmount": 100
@@ -1255,15 +1320,16 @@
     "name": "Compressed Scordite",
     "volume": 0.19,
     "refineAmount": 1,
-    "color": "#c1c9bc",
+    "asteroidType": "ore",
     "groupName": "Scordite",
-    "bonus": 0,
+    "color": "#c1c9bc",
+    "bonus": "0%",
     "minerals": {
       "34": 150,
       "35": 90
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressesFrom": 1228,
     "compressAmount": 100
@@ -1274,9 +1340,10 @@
     "name": "Spodumain",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#ced77c",
+    "asteroidType": "ore",
     "groupName": "Spodumain",
-    "bonus": 0,
+    "color": "#ced77c",
+    "bonus": "0%",
     "minerals": {
       "34": 48000,
       "37": 1000,
@@ -1285,7 +1352,8 @@
       "40": 40
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec",
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1295,9 +1363,10 @@
     "name": "Bright Spodumain",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#ced77c",
+    "asteroidType": "ore",
     "groupName": "Spodumain",
-    "bonus": 0.05,
+    "color": "#ced77c",
+    "bonus": "5%",
     "minerals": {
       "34": 50400,
       "37": 1050,
@@ -1306,7 +1375,8 @@
       "40": 42
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec",
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1316,9 +1386,10 @@
     "name": "Gleaming Spodumain",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#ced77c",
+    "asteroidType": "ore",
     "groupName": "Spodumain",
-    "bonus": 0.1,
+    "color": "#ced77c",
+    "bonus": "10%",
     "minerals": {
       "34": 52800,
       "37": 1100,
@@ -1327,7 +1398,8 @@
       "40": 44
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec",
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1337,9 +1409,10 @@
     "name": "Compressed Bright Spodumain",
     "volume": 28,
     "refineAmount": 1,
-    "color": "#ced77c",
+    "asteroidType": "ore",
     "groupName": "Spodumain",
-    "bonus": 0.05,
+    "color": "#ced77c",
+    "bonus": "5%",
     "minerals": {
       "34": 50400,
       "37": 1050,
@@ -1348,7 +1421,8 @@
       "40": 42
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec",
+      "Triglavian"
     ],
     "compressesFrom": 17466,
     "compressAmount": 100
@@ -1359,9 +1433,10 @@
     "name": "Compressed Gleaming Spodumain",
     "volume": 28,
     "refineAmount": 1,
-    "color": "#ced77c",
+    "asteroidType": "ore",
     "groupName": "Spodumain",
-    "bonus": 0.1,
+    "color": "#ced77c",
+    "bonus": "10%",
     "minerals": {
       "34": 52800,
       "37": 1100,
@@ -1370,7 +1445,8 @@
       "40": 44
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec",
+      "Triglavian"
     ],
     "compressesFrom": 17467,
     "compressAmount": 100
@@ -1381,9 +1457,10 @@
     "name": "Compressed Spodumain",
     "volume": 28,
     "refineAmount": 1,
-    "color": "#ced77c",
+    "asteroidType": "ore",
     "groupName": "Spodumain",
-    "bonus": 0,
+    "color": "#ced77c",
+    "bonus": "0%",
     "minerals": {
       "34": 48000,
       "37": 1000,
@@ -1392,7 +1469,8 @@
       "40": 40
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec",
+      "Triglavian"
     ],
     "compressesFrom": 19,
     "compressAmount": 100
@@ -1403,14 +1481,15 @@
     "name": "Veldspar",
     "volume": 0.1,
     "refineAmount": 100,
-    "color": "#d3b871",
+    "asteroidType": "ore",
     "groupName": "Veldspar",
-    "bonus": 0,
+    "color": "#d3b871",
+    "bonus": "0%",
     "minerals": {
       "34": 400
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressAmount": 1
   },
@@ -1420,14 +1499,15 @@
     "name": "Concentrated Veldspar",
     "volume": 0.1,
     "refineAmount": 100,
-    "color": "#d3b871",
+    "asteroidType": "ore",
     "groupName": "Veldspar",
-    "bonus": 0.05,
+    "color": "#d3b871",
+    "bonus": "5%",
     "minerals": {
       "34": 420
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressAmount": 1
   },
@@ -1437,14 +1517,15 @@
     "name": "Dense Veldspar",
     "volume": 0.1,
     "refineAmount": 100,
-    "color": "#d3b871",
+    "asteroidType": "ore",
     "groupName": "Veldspar",
-    "bonus": 0.1,
+    "color": "#d3b871",
+    "bonus": "10%",
     "minerals": {
       "34": 440
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressAmount": 1
   },
@@ -1454,14 +1535,15 @@
     "name": "Compressed Concentrated Veldspar",
     "volume": 0.15,
     "refineAmount": 1,
-    "color": "#d3b871",
+    "asteroidType": "ore",
     "groupName": "Veldspar",
-    "bonus": 0.05,
+    "color": "#d3b871",
+    "bonus": "5%",
     "minerals": {
       "34": 420
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressesFrom": 17470,
     "compressAmount": 100
@@ -1472,14 +1554,15 @@
     "name": "Compressed Dense Veldspar",
     "volume": 0.15,
     "refineAmount": 1,
-    "color": "#d3b871",
+    "asteroidType": "ore",
     "groupName": "Veldspar",
-    "bonus": 0.1,
+    "color": "#d3b871",
+    "bonus": "10%",
     "minerals": {
       "34": 440
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressesFrom": 17471,
     "compressAmount": 100
@@ -1490,14 +1573,15 @@
     "name": "Compressed Veldspar",
     "volume": 0.15,
     "refineAmount": 1,
-    "color": "#d3b871",
+    "asteroidType": "ore",
     "groupName": "Veldspar",
-    "bonus": 0,
+    "color": "#d3b871",
+    "bonus": "0%",
     "minerals": {
       "34": 400
     },
     "availableIn": [
-      "highsec"
+      "Highsec"
     ],
     "compressesFrom": 1230,
     "compressAmount": 100
@@ -1508,16 +1592,17 @@
     "name": "Gneiss",
     "volume": 5,
     "refineAmount": 100,
-    "color": "#8cfb9d",
+    "asteroidType": "ore",
     "groupName": "Gneiss",
-    "bonus": 0,
+    "color": "#8cfb9d",
+    "bonus": "0%",
     "minerals": {
       "35": 2000,
       "36": 1500,
       "37": 800
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -1527,16 +1612,17 @@
     "name": "Iridescent Gneiss",
     "volume": 5,
     "refineAmount": 100,
-    "color": "#8cfb9d",
+    "asteroidType": "ore",
     "groupName": "Gneiss",
-    "bonus": 0.05,
+    "color": "#8cfb9d",
+    "bonus": "5%",
     "minerals": {
       "35": 2100,
       "36": 1575,
       "37": 840
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -1546,16 +1632,17 @@
     "name": "Prismatic Gneiss",
     "volume": 5,
     "refineAmount": 100,
-    "color": "#8cfb9d",
+    "asteroidType": "ore",
     "groupName": "Gneiss",
-    "bonus": 0.1,
+    "color": "#8cfb9d",
+    "bonus": "10%",
     "minerals": {
       "35": 2200,
       "36": 1650,
       "37": 880
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressAmount": 1
   },
@@ -1565,16 +1652,17 @@
     "name": "Compressed Gneiss",
     "volume": 1.8,
     "refineAmount": 1,
-    "color": "#8cfb9d",
+    "asteroidType": "ore",
     "groupName": "Gneiss",
-    "bonus": 0,
+    "color": "#8cfb9d",
+    "bonus": "0%",
     "minerals": {
       "35": 2000,
       "36": 1500,
       "37": 800
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 1229,
     "compressAmount": 100
@@ -1585,16 +1673,17 @@
     "name": "Compressed Iridescent Gneiss",
     "volume": 1.8,
     "refineAmount": 1,
-    "color": "#8cfb9d",
+    "asteroidType": "ore",
     "groupName": "Gneiss",
-    "bonus": 0.05,
+    "color": "#8cfb9d",
+    "bonus": "5%",
     "minerals": {
       "35": 2100,
       "36": 1575,
       "37": 840
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 17865,
     "compressAmount": 100
@@ -1605,16 +1694,17 @@
     "name": "Compressed Prismatic Gneiss",
     "volume": 1.8,
     "refineAmount": 1,
-    "color": "#8cfb9d",
+    "asteroidType": "ore",
     "groupName": "Gneiss",
-    "bonus": 0.1,
+    "color": "#8cfb9d",
+    "bonus": "10%",
     "minerals": {
       "35": 2200,
       "36": 1650,
       "37": 880
     },
     "availableIn": [
-      "lowsec"
+      "Lowsec"
     ],
     "compressesFrom": 17866,
     "compressAmount": 100
@@ -1625,14 +1715,15 @@
     "name": "Mercoxit",
     "volume": 40,
     "refineAmount": 100,
-    "color": "#de8d63",
+    "asteroidType": "ore",
     "groupName": "Mercoxit",
-    "bonus": 0,
+    "color": "#de8d63",
+    "bonus": "0%",
     "minerals": {
       "11399": 140
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -1642,14 +1733,15 @@
     "name": "Magma Mercoxit",
     "volume": 40,
     "refineAmount": 100,
-    "color": "#de8d63",
+    "asteroidType": "ore",
     "groupName": "Mercoxit",
-    "bonus": 0.05,
+    "color": "#de8d63",
+    "bonus": "5%",
     "minerals": {
       "11399": 147
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -1659,14 +1751,15 @@
     "name": "Vitreous Mercoxit",
     "volume": 40,
     "refineAmount": 100,
-    "color": "#de8d63",
+    "asteroidType": "ore",
     "groupName": "Mercoxit",
-    "bonus": 0.1,
+    "color": "#de8d63",
+    "bonus": "10%",
     "minerals": {
       "11399": 154
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -1676,14 +1769,15 @@
     "name": "Compressed Magma Mercoxit",
     "volume": 0.1,
     "refineAmount": 1,
-    "color": "#de8d63",
+    "asteroidType": "ore",
     "groupName": "Mercoxit",
-    "bonus": 0.05,
+    "color": "#de8d63",
+    "bonus": "5%",
     "minerals": {
       "11399": 147
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressesFrom": 17869,
     "compressAmount": 100
@@ -1694,14 +1788,15 @@
     "name": "Compressed Mercoxit",
     "volume": 0.1,
     "refineAmount": 1,
-    "color": "#de8d63",
+    "asteroidType": "ore",
     "groupName": "Mercoxit",
-    "bonus": 0,
+    "color": "#de8d63",
+    "bonus": "0%",
     "minerals": {
       "11399": 140
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressesFrom": 11396,
     "compressAmount": 100
@@ -1712,14 +1807,15 @@
     "name": "Compressed Vitreous Mercoxit",
     "volume": 0.1,
     "refineAmount": 1,
-    "color": "#de8d63",
+    "asteroidType": "ore",
     "groupName": "Mercoxit",
-    "bonus": 0.1,
+    "color": "#de8d63",
+    "bonus": "10%",
     "minerals": {
       "11399": 154
     },
     "availableIn": [
-      "nullsec"
+      "Nullsec"
     ],
     "compressesFrom": 17870,
     "compressAmount": 100
@@ -1730,16 +1826,17 @@
     "name": "Omber",
     "volume": 0.6,
     "refineAmount": 100,
-    "color": "#fffb9d",
+    "asteroidType": "ore",
     "groupName": "Omber",
-    "bonus": 0,
+    "color": "#fffb9d",
+    "bonus": "0%",
     "minerals": {
       "35": 90,
       "37": 75
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -1749,16 +1846,17 @@
     "name": "Silvery Omber",
     "volume": 0.6,
     "refineAmount": 100,
-    "color": "#fffb9d",
+    "asteroidType": "ore",
     "groupName": "Omber",
-    "bonus": 0.05,
+    "color": "#fffb9d",
+    "bonus": "5%",
     "minerals": {
       "35": 95,
       "37": 79
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -1768,16 +1866,17 @@
     "name": "Golden Omber",
     "volume": 0.6,
     "refineAmount": 100,
-    "color": "#fffb9d",
+    "asteroidType": "ore",
     "groupName": "Omber",
-    "bonus": 0.1,
+    "color": "#fffb9d",
+    "bonus": "10%",
     "minerals": {
       "35": 99,
       "37": 83
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressAmount": 1
   },
@@ -1787,16 +1886,17 @@
     "name": "Compressed Golden Omber",
     "volume": 0.3,
     "refineAmount": 1,
-    "color": "#fffb9d",
+    "asteroidType": "ore",
     "groupName": "Omber",
-    "bonus": 0.1,
+    "color": "#fffb9d",
+    "bonus": "10%",
     "minerals": {
       "35": 99,
       "37": 83
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 17868,
     "compressAmount": 100
@@ -1807,16 +1907,17 @@
     "name": "Compressed Omber",
     "volume": 0.3,
     "refineAmount": 1,
-    "color": "#fffb9d",
+    "asteroidType": "ore",
     "groupName": "Omber",
-    "bonus": 0,
+    "color": "#fffb9d",
+    "bonus": "0%",
     "minerals": {
       "35": 90,
       "37": 75
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 1227,
     "compressAmount": 100
@@ -1827,16 +1928,17 @@
     "name": "Compressed Silvery Omber",
     "volume": 0.3,
     "refineAmount": 1,
-    "color": "#fffb9d",
+    "asteroidType": "ore",
     "groupName": "Omber",
-    "bonus": 0.05,
+    "color": "#fffb9d",
+    "bonus": "5%",
     "minerals": {
       "35": 95,
       "37": 79
     },
     "availableIn": [
-      "lowsec",
-      "nullsec"
+      "Lowsec",
+      "Nullsec"
     ],
     "compressesFrom": 17867,
     "compressAmount": 100
@@ -1847,16 +1949,17 @@
     "name": "Talassonite",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#c38553",
+    "asteroidType": "ore",
     "groupName": "Talassonite",
-    "bonus": 0,
+    "color": "#c38553",
+    "bonus": "0%",
     "minerals": {
       "34": 40000,
       "38": 960,
       "40": 32
     },
     "availableIn": [
-      "triglavian"
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1866,16 +1969,17 @@
     "name": "Abyssal Talassonite",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#c38553",
+    "asteroidType": "ore",
     "groupName": "Talassonite",
-    "bonus": 0.05,
+    "color": "#c38553",
+    "bonus": "5%",
     "minerals": {
       "34": 42000,
       "38": 1008,
       "40": 34
     },
     "availableIn": [
-      "triglavian"
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1885,16 +1989,17 @@
     "name": "Hadal Talassonite",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#c38553",
+    "asteroidType": "ore",
     "groupName": "Talassonite",
-    "bonus": 0.1,
+    "color": "#c38553",
+    "bonus": "10%",
     "minerals": {
       "34": 44000,
       "38": 1056,
       "40": 35
     },
     "availableIn": [
-      "triglavian"
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1904,16 +2009,17 @@
     "name": "Rakovene",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#7da4a8",
+    "asteroidType": "ore",
     "groupName": "Rakovene",
-    "bonus": 0,
+    "color": "#7da4a8",
+    "bonus": "0%",
     "minerals": {
       "34": 40000,
       "37": 3200,
       "39": 200
     },
     "availableIn": [
-      "triglavian"
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1923,16 +2029,17 @@
     "name": "Abyssal Rakovene",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#7da4a8",
+    "asteroidType": "ore",
     "groupName": "Rakovene",
-    "bonus": 0.05,
+    "color": "#7da4a8",
+    "bonus": "5%",
     "minerals": {
       "34": 42000,
       "37": 3360,
       "39": 210
     },
     "availableIn": [
-      "triglavian"
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1942,16 +2049,17 @@
     "name": "Hadal Rakovene",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#7da4a8",
+    "asteroidType": "ore",
     "groupName": "Rakovene",
-    "bonus": 0.1,
+    "color": "#7da4a8",
+    "bonus": "10%",
     "minerals": {
       "34": 44000,
       "37": 3520,
       "39": 220
     },
     "availableIn": [
-      "triglavian"
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1961,16 +2069,17 @@
     "name": "Bezdnacine",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#c3bca8",
+    "asteroidType": "ore",
     "groupName": "Bezdnacine",
-    "bonus": 0,
+    "color": "#c3bca8",
+    "bonus": "0%",
     "minerals": {
       "34": 40000,
       "37": 4800,
       "40": 128
     },
     "availableIn": [
-      "triglavian"
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1980,16 +2089,17 @@
     "name": "Abyssal Bezdnacine",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#c3bca8",
+    "asteroidType": "ore",
     "groupName": "Bezdnacine",
-    "bonus": 0.05,
+    "color": "#c3bca8",
+    "bonus": "5%",
     "minerals": {
       "34": 42000,
       "37": 5040,
       "40": 134
     },
     "availableIn": [
-      "triglavian"
+      "Triglavian"
     ],
     "compressAmount": 1
   },
@@ -1999,17 +2109,1706 @@
     "name": "Hadal Bezdnacine",
     "volume": 16,
     "refineAmount": 100,
-    "color": "#c3bca8",
+    "asteroidType": "ore",
     "groupName": "Bezdnacine",
-    "bonus": 0.1,
+    "color": "#c3bca8",
+    "bonus": "10%",
     "minerals": {
       "34": 44000,
       "37": 5280,
       "40": 141
     },
     "availableIn": [
-      "triglavian"
+      "Triglavian"
     ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45490,
+    "groupId": 1884,
+    "name": "Zeolites",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Zeolites",
+    "color": "#b1a28a",
+    "bonus": "0%",
+    "minerals": {
+      "35": 8000,
+      "36": 400,
+      "16634": 65
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45491,
+    "groupId": 1884,
+    "name": "Sylvite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Sylvite",
+    "color": "#ac9e81",
+    "bonus": "0%",
+    "minerals": {
+      "35": 4000,
+      "36": 400,
+      "16635": 65
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45492,
+    "groupId": 1884,
+    "name": "Bitumens",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Bitumens",
+    "color": "#beaa86",
+    "bonus": "0%",
+    "minerals": {
+      "35": 6000,
+      "36": 400,
+      "16633": 65
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45493,
+    "groupId": 1884,
+    "name": "Coesite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Coesite",
+    "color": "#b79f79",
+    "bonus": "0%",
+    "minerals": {
+      "35": 2000,
+      "36": 400,
+      "16636": 65
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46280,
+    "groupId": 1884,
+    "name": "Brimful Zeolites",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Zeolites",
+    "color": "#b1a28a",
+    "bonus": "15%",
+    "minerals": {
+      "35": 9200,
+      "36": 460,
+      "16634": 75
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46281,
+    "groupId": 1884,
+    "name": "Glistening Zeolites",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Zeolites",
+    "color": "#b1a28a",
+    "bonus": "100%",
+    "minerals": {
+      "35": 16000,
+      "36": 800,
+      "16634": 130
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46282,
+    "groupId": 1884,
+    "name": "Brimful Sylvite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Sylvite",
+    "color": "#ac9e81",
+    "bonus": "15%",
+    "minerals": {
+      "35": 4600,
+      "36": 460,
+      "16635": 75
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46283,
+    "groupId": 1884,
+    "name": "Glistening Sylvite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Sylvite",
+    "color": "#ac9e81",
+    "bonus": "100%",
+    "minerals": {
+      "35": 8000,
+      "36": 800,
+      "16635": 130
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46284,
+    "groupId": 1884,
+    "name": "Brimful Bitumens",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Bitumens",
+    "color": "#beaa86",
+    "bonus": "15%",
+    "minerals": {
+      "35": 6900,
+      "36": 460,
+      "16633": 75
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46285,
+    "groupId": 1884,
+    "name": "Glistening Bitumens",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Bitumens",
+    "color": "#beaa86",
+    "bonus": "100%",
+    "minerals": {
+      "35": 12000,
+      "36": 800,
+      "16633": 130
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46286,
+    "groupId": 1884,
+    "name": "Brimful Coesite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Coesite",
+    "color": "#b79f79",
+    "bonus": "15%",
+    "minerals": {
+      "35": 2300,
+      "36": 460,
+      "16636": 75
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46287,
+    "groupId": 1884,
+    "name": "Glistening Coesite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Coesite",
+    "color": "#b79f79",
+    "bonus": "100%",
+    "minerals": {
+      "35": 4000,
+      "36": 800,
+      "16636": 130
+    },
+    "availableIn": [
+      "R4"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45494,
+    "groupId": 1920,
+    "name": "Cobaltite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Cobaltite",
+    "color": "#688f95",
+    "bonus": "0%",
+    "minerals": {
+      "16640": 40
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45495,
+    "groupId": 1920,
+    "name": "Euxenite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Euxenite",
+    "color": "#5e7679",
+    "bonus": "0%",
+    "minerals": {
+      "16639": 40
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45496,
+    "groupId": 1920,
+    "name": "Titanite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Titanite",
+    "color": "#606f6f",
+    "bonus": "0%",
+    "minerals": {
+      "16638": 40
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45497,
+    "groupId": 1920,
+    "name": "Scheelite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Scheelite",
+    "color": "#54757d",
+    "bonus": "0%",
+    "minerals": {
+      "16637": 40
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46288,
+    "groupId": 1920,
+    "name": "Copious Cobaltite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Cobaltite",
+    "color": "#688f95",
+    "bonus": "15%",
+    "minerals": {
+      "16640": 46
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46289,
+    "groupId": 1920,
+    "name": "Twinkling Cobaltite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Cobaltite",
+    "color": "#688f95",
+    "bonus": "100%",
+    "minerals": {
+      "16640": 80
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46290,
+    "groupId": 1920,
+    "name": "Copious Euxenite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Euxenite",
+    "color": "#5e7679",
+    "bonus": "15%",
+    "minerals": {
+      "16639": 46
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46291,
+    "groupId": 1920,
+    "name": "Twinkling Euxenite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Euxenite",
+    "color": "#5e7679",
+    "bonus": "100%",
+    "minerals": {
+      "16639": 80
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46292,
+    "groupId": 1920,
+    "name": "Copious Titanite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Titanite",
+    "color": "#606f6f",
+    "bonus": "15%",
+    "minerals": {
+      "16638": 46
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46293,
+    "groupId": 1920,
+    "name": "Twinkling Titanite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Titanite",
+    "color": "#606f6f",
+    "bonus": "100%",
+    "minerals": {
+      "16638": 80
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46294,
+    "groupId": 1920,
+    "name": "Copious Scheelite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Scheelite",
+    "color": "#54757d",
+    "bonus": "15%",
+    "minerals": {
+      "16637": 46
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46295,
+    "groupId": 1920,
+    "name": "Twinkling Scheelite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Scheelite",
+    "color": "#54757d",
+    "bonus": "100%",
+    "minerals": {
+      "16637": 80
+    },
+    "availableIn": [
+      "R8"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45498,
+    "groupId": 1921,
+    "name": "Otavite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Otavite",
+    "color": "#c69e7c",
+    "bonus": "0%",
+    "minerals": {
+      "16634": 10,
+      "16643": 40
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45499,
+    "groupId": 1921,
+    "name": "Sperrylite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Sperrylite",
+    "color": "#ac8366",
+    "bonus": "0%",
+    "minerals": {
+      "16635": 10,
+      "16644": 40
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45500,
+    "groupId": 1921,
+    "name": "Vanadinite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Vanadinite",
+    "color": "#957e6b",
+    "bonus": "0%",
+    "minerals": {
+      "16636": 10,
+      "16642": 40
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45501,
+    "groupId": 1921,
+    "name": "Chromite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Chromite",
+    "color": "#9a6442",
+    "bonus": "0%",
+    "minerals": {
+      "16633": 10,
+      "16641": 40
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46296,
+    "groupId": 1921,
+    "name": "Lavish Otavite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Otavite",
+    "color": "#c69e7c",
+    "bonus": "15%",
+    "minerals": {
+      "16634": 12,
+      "16643": 46
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46297,
+    "groupId": 1921,
+    "name": "Shimmering Otavite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Otavite",
+    "color": "#c69e7c",
+    "bonus": "100%",
+    "minerals": {
+      "16634": 20,
+      "16643": 80
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46298,
+    "groupId": 1921,
+    "name": "Lavish Sperrylite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Sperrylite",
+    "color": "#ac8366",
+    "bonus": "15%",
+    "minerals": {
+      "16635": 12,
+      "16644": 46
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46299,
+    "groupId": 1921,
+    "name": "Shimmering Sperrylite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Sperrylite",
+    "color": "#ac8366",
+    "bonus": "100%",
+    "minerals": {
+      "16635": 20,
+      "16644": 80
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46300,
+    "groupId": 1921,
+    "name": "Lavish Vanadinite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Vanadinite",
+    "color": "#957e6b",
+    "bonus": "15%",
+    "minerals": {
+      "16636": 12,
+      "16642": 46
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46301,
+    "groupId": 1921,
+    "name": "Shimmering Vanadinite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Vanadinite",
+    "color": "#957e6b",
+    "bonus": "100%",
+    "minerals": {
+      "16636": 20,
+      "16642": 80
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46302,
+    "groupId": 1921,
+    "name": "Lavish Chromite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Chromite",
+    "color": "#9a6442",
+    "bonus": "15%",
+    "minerals": {
+      "16633": 12,
+      "16641": 46
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46303,
+    "groupId": 1921,
+    "name": "Shimmering Chromite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Chromite",
+    "color": "#9a6442",
+    "bonus": "100%",
+    "minerals": {
+      "16633": 20,
+      "16641": 80
+    },
+    "availableIn": [
+      "R16"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45502,
+    "groupId": 1922,
+    "name": "Carnotite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Carnotite",
+    "color": "#4a6795",
+    "bonus": "0%",
+    "minerals": {
+      "16634": 15,
+      "16640": 10,
+      "16649": 50
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45503,
+    "groupId": 1922,
+    "name": "Zircon",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Zircon",
+    "color": "#535d6c",
+    "bonus": "0%",
+    "minerals": {
+      "16636": 15,
+      "16638": 10,
+      "16648": 50
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45504,
+    "groupId": 1922,
+    "name": "Pollucite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Pollucite",
+    "color": "#375284",
+    "bonus": "0%",
+    "minerals": {
+      "16633": 15,
+      "16639": 10,
+      "16647": 50
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45506,
+    "groupId": 1922,
+    "name": "Cinnabar",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Cinnabar",
+    "color": "#56637f",
+    "bonus": "0%",
+    "minerals": {
+      "16635": 15,
+      "16637": 10,
+      "16646": 50
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46304,
+    "groupId": 1922,
+    "name": "Replete Carnotite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Carnotite",
+    "color": "#4a6795",
+    "bonus": "15%",
+    "minerals": {
+      "16634": 17,
+      "16640": 12,
+      "16649": 58
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46305,
+    "groupId": 1922,
+    "name": "Glowing Carnotite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Carnotite",
+    "color": "#4a6795",
+    "bonus": "100%",
+    "minerals": {
+      "16634": 30,
+      "16640": 20,
+      "16649": 100
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46306,
+    "groupId": 1922,
+    "name": "Replete Zircon",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Zircon",
+    "color": "#535d6c",
+    "bonus": "15%",
+    "minerals": {
+      "16636": 17,
+      "16638": 12,
+      "16648": 58
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46307,
+    "groupId": 1922,
+    "name": "Glowing Zircon",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Zircon",
+    "color": "#535d6c",
+    "bonus": "100%",
+    "minerals": {
+      "16636": 30,
+      "16638": 20,
+      "16648": 100
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46308,
+    "groupId": 1922,
+    "name": "Replete Pollucite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Pollucite",
+    "color": "#375284",
+    "bonus": "15%",
+    "minerals": {
+      "16633": 17,
+      "16639": 12,
+      "16647": 58
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46309,
+    "groupId": 1922,
+    "name": "Glowing Pollucite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Pollucite",
+    "color": "#375284",
+    "bonus": "100%",
+    "minerals": {
+      "16633": 30,
+      "16639": 20,
+      "16647": 100
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46310,
+    "groupId": 1922,
+    "name": "Replete Cinnabar",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Cinnabar",
+    "color": "#56637f",
+    "bonus": "15%",
+    "minerals": {
+      "16635": 17,
+      "16637": 12,
+      "16646": 58
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46311,
+    "groupId": 1922,
+    "name": "Glowing Cinnabar",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Cinnabar",
+    "color": "#56637f",
+    "bonus": "100%",
+    "minerals": {
+      "16635": 30,
+      "16637": 20,
+      "16646": 100
+    },
+    "availableIn": [
+      "R32"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45510,
+    "groupId": 1923,
+    "name": "Xenotime",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Xenotime",
+    "color": "#987874",
+    "bonus": "0%",
+    "minerals": {
+      "16634": 20,
+      "16640": 20,
+      "16642": 10,
+      "16650": 22
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45511,
+    "groupId": 1923,
+    "name": "Monazite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Monazite",
+    "color": "#b88c86",
+    "bonus": "0%",
+    "minerals": {
+      "16635": 20,
+      "16637": 20,
+      "16641": 10,
+      "16651": 22
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45512,
+    "groupId": 1923,
+    "name": "Loparite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Loparite",
+    "color": "#c1847f",
+    "bonus": "0%",
+    "minerals": {
+      "16633": 20,
+      "16639": 20,
+      "16644": 10,
+      "16652": 22
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 45513,
+    "groupId": 1923,
+    "name": "Ytterbite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Ytterbite",
+    "color": "#835c57",
+    "bonus": "0%",
+    "minerals": {
+      "16636": 20,
+      "16638": 20,
+      "16643": 10,
+      "16653": 22
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46312,
+    "groupId": 1923,
+    "name": "Bountiful Xenotime",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Xenotime",
+    "color": "#987874",
+    "bonus": "15%",
+    "minerals": {
+      "16634": 23,
+      "16640": 23,
+      "16642": 12,
+      "16650": 25
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46313,
+    "groupId": 1923,
+    "name": "Shining Xenotime",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Xenotime",
+    "color": "#987874",
+    "bonus": "100%",
+    "minerals": {
+      "16634": 40,
+      "16640": 40,
+      "16642": 20,
+      "16650": 44
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46314,
+    "groupId": 1923,
+    "name": "Bountiful Monazite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Monazite",
+    "color": "#b88c86",
+    "bonus": "15%",
+    "minerals": {
+      "16635": 23,
+      "16637": 23,
+      "16641": 12,
+      "16651": 25
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46315,
+    "groupId": 1923,
+    "name": "Shining Monazite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Monazite",
+    "color": "#b88c86",
+    "bonus": "100%",
+    "minerals": {
+      "16635": 40,
+      "16637": 40,
+      "16641": 20,
+      "16651": 44
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46316,
+    "groupId": 1923,
+    "name": "Bountiful Loparite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Loparite",
+    "color": "#c1847f",
+    "bonus": "15%",
+    "minerals": {
+      "16633": 23,
+      "16639": 23,
+      "16644": 12,
+      "16652": 25
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46317,
+    "groupId": 1923,
+    "name": "Shining Loparite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Loparite",
+    "color": "#c1847f",
+    "bonus": "100%",
+    "minerals": {
+      "16633": 40,
+      "16639": 40,
+      "16644": 20,
+      "16652": 44
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46318,
+    "groupId": 1923,
+    "name": "Bountiful Ytterbite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Ytterbite",
+    "color": "#835c57",
+    "bonus": "15%",
+    "minerals": {
+      "16636": 23,
+      "16638": 23,
+      "16643": 12,
+      "16653": 25
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 46319,
+    "groupId": 1923,
+    "name": "Shining Ytterbite",
+    "volume": 10,
+    "refineAmount": 100,
+    "asteroidType": "moon",
+    "groupName": "Ytterbite",
+    "color": "#835c57",
+    "bonus": "100%",
+    "minerals": {
+      "16636": 40,
+      "16638": 40,
+      "16643": 20,
+      "16653": 44
+    },
+    "availableIn": [
+      "R64"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 16262,
+    "groupId": 465,
+    "name": "Clear Icicle",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Clear Icicle",
+    "color": "#a8b2b8",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 69,
+      "16273": 35,
+      "16274": 414,
+      "16275": 1
+    },
+    "availableIn": [
+      "Amarr"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 16263,
+    "groupId": 465,
+    "name": "Glacial Mass",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Glacial Mass",
+    "color": "#b9cfdc",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 69,
+      "16273": 35,
+      "16275": 1,
+      "17889": 414
+    },
+    "availableIn": [
+      "Minmatar"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 16264,
+    "groupId": 465,
+    "name": "Blue Ice",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Blue Ice",
+    "color": "#91b5c8",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 69,
+      "16273": 35,
+      "16275": 1,
+      "17887": 414
+    },
+    "availableIn": [
+      "Gallente"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 16265,
+    "groupId": 465,
+    "name": "White Glaze",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "White Glaze",
+    "color": "#92a9b5",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 69,
+      "16273": 35,
+      "16275": 1,
+      "17888": 414
+    },
+    "availableIn": [
+      "Caldari"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 16266,
+    "groupId": 465,
+    "name": "Glare Crust",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Glare Crust",
+    "color": "#92a8b3",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 1381,
+      "16273": 691,
+      "16275": 35
+    },
+    "availableIn": [
+      "Nullsec",
+      "Lowsec"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 16267,
+    "groupId": 465,
+    "name": "Dark Glitter",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Dark Glitter",
+    "color": "#a7b4bb",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 691,
+      "16273": 1381,
+      "16275": 69
+    },
+    "availableIn": [
+      "Nullsec",
+      "Lowsec"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 16268,
+    "groupId": 465,
+    "name": "Gelidus",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Gelidus",
+    "color": "#8cbabd",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 345,
+      "16273": 691,
+      "16275": 104
+    },
+    "availableIn": [
+      "Nullsec"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 16269,
+    "groupId": 465,
+    "name": "Krystallos",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Krystallos",
+    "color": "#7893a4",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 173,
+      "16273": 691,
+      "16275": 173
+    },
+    "availableIn": [
+      "Nullsec"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 17975,
+    "groupId": 465,
+    "name": "Thick Blue Ice",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Blue Ice",
+    "color": "#91b5c8",
+    "bonus": "Enriched",
+    "minerals": {
+      "16272": 104,
+      "16273": 55,
+      "16275": 1,
+      "17887": 483
+    },
+    "availableIn": [
+      "Gallente"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 17976,
+    "groupId": 465,
+    "name": "Pristine White Glaze",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "White Glaze",
+    "color": "#92a9b5",
+    "bonus": "Enriched",
+    "minerals": {
+      "16272": 104,
+      "16273": 55,
+      "16275": 1,
+      "17888": 483
+    },
+    "availableIn": [
+      "Caldari"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 17977,
+    "groupId": 465,
+    "name": "Smooth Glacial Mass",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Glacial Mass",
+    "color": "#b9cfdc",
+    "bonus": "Enriched",
+    "minerals": {
+      "16272": 104,
+      "16273": 55,
+      "16275": 1,
+      "17889": 483
+    },
+    "availableIn": [
+      "Minmatar"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 17978,
+    "groupId": 465,
+    "name": "Enriched Clear Icicle",
+    "volume": 1000,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Clear Icicle",
+    "color": "#a8b2b8",
+    "bonus": "Enriched",
+    "minerals": {
+      "16272": 104,
+      "16273": 55,
+      "16274": 483,
+      "16275": 1
+    },
+    "availableIn": [
+      "Amarr"
+    ],
+    "compressAmount": 1
+  },
+  {
+    "id": 28433,
+    "groupId": 465,
+    "name": "Compressed Blue Ice",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Blue Ice",
+    "color": "#91b5c8",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 69,
+      "16273": 35,
+      "16275": 1,
+      "17887": 414
+    },
+    "availableIn": [
+      "Gallente"
+    ],
+    "compressesFrom": 16264,
+    "compressAmount": 1
+  },
+  {
+    "id": 28434,
+    "groupId": 465,
+    "name": "Compressed Clear Icicle",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Clear Icicle",
+    "color": "#a8b2b8",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 69,
+      "16273": 35,
+      "16274": 414,
+      "16275": 1
+    },
+    "availableIn": [
+      "Amarr"
+    ],
+    "compressesFrom": 16262,
+    "compressAmount": 1
+  },
+  {
+    "id": 28435,
+    "groupId": 465,
+    "name": "Compressed Dark Glitter",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Dark Glitter",
+    "color": "#a7b4bb",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 691,
+      "16273": 1381,
+      "16275": 69
+    },
+    "availableIn": [
+      "Nullsec",
+      "Lowsec"
+    ],
+    "compressesFrom": 16267,
+    "compressAmount": 1
+  },
+  {
+    "id": 28436,
+    "groupId": 465,
+    "name": "Compressed Enriched Clear Icicle",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Clear Icicle",
+    "color": "#a8b2b8",
+    "bonus": "Enriched",
+    "minerals": {
+      "16272": 104,
+      "16273": 55,
+      "16274": 483,
+      "16275": 1
+    },
+    "availableIn": [
+      "Amarr"
+    ],
+    "compressesFrom": 17978,
+    "compressAmount": 1
+  },
+  {
+    "id": 28437,
+    "groupId": 465,
+    "name": "Compressed Gelidus",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Gelidus",
+    "color": "#8cbabd",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 345,
+      "16273": 691,
+      "16275": 104
+    },
+    "availableIn": [
+      "Nullsec"
+    ],
+    "compressesFrom": 16268,
+    "compressAmount": 1
+  },
+  {
+    "id": 28438,
+    "groupId": 465,
+    "name": "Compressed Glacial Mass",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Glacial Mass",
+    "color": "#b9cfdc",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 69,
+      "16273": 35,
+      "16275": 1,
+      "17889": 414
+    },
+    "availableIn": [
+      "Minmatar"
+    ],
+    "compressesFrom": 16263,
+    "compressAmount": 1
+  },
+  {
+    "id": 28439,
+    "groupId": 465,
+    "name": "Compressed Glare Crust",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Glare Crust",
+    "color": "#92a8b3",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 1381,
+      "16273": 691,
+      "16275": 35
+    },
+    "availableIn": [
+      "Nullsec",
+      "Lowsec"
+    ],
+    "compressesFrom": 16266,
+    "compressAmount": 1
+  },
+  {
+    "id": 28440,
+    "groupId": 465,
+    "name": "Compressed Krystallos",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Krystallos",
+    "color": "#7893a4",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 173,
+      "16273": 691,
+      "16275": 173
+    },
+    "availableIn": [
+      "Nullsec"
+    ],
+    "compressesFrom": 16269,
+    "compressAmount": 1
+  },
+  {
+    "id": 28441,
+    "groupId": 465,
+    "name": "Compressed Pristine White Glaze",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "White Glaze",
+    "color": "#92a9b5",
+    "bonus": "Enriched",
+    "minerals": {
+      "16272": 104,
+      "16273": 55,
+      "16275": 1,
+      "17888": 483
+    },
+    "availableIn": [
+      "Caldari"
+    ],
+    "compressesFrom": 17976,
+    "compressAmount": 1
+  },
+  {
+    "id": 28442,
+    "groupId": 465,
+    "name": "Compressed Smooth Glacial Mass",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Glacial Mass",
+    "color": "#b9cfdc",
+    "bonus": "Enriched",
+    "minerals": {
+      "16272": 104,
+      "16273": 55,
+      "16275": 1,
+      "17889": 483
+    },
+    "availableIn": [
+      "Minmatar"
+    ],
+    "compressesFrom": 17977,
+    "compressAmount": 1
+  },
+  {
+    "id": 28443,
+    "groupId": 465,
+    "name": "Compressed Thick Blue Ice",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "Blue Ice",
+    "color": "#91b5c8",
+    "bonus": "Enriched",
+    "minerals": {
+      "16272": 104,
+      "16273": 55,
+      "16275": 1,
+      "17887": 483
+    },
+    "availableIn": [
+      "Gallente"
+    ],
+    "compressesFrom": 17975,
+    "compressAmount": 1
+  },
+  {
+    "id": 28444,
+    "groupId": 465,
+    "name": "Compressed White Glaze",
+    "volume": 100,
+    "refineAmount": 1,
+    "asteroidType": "ice",
+    "groupName": "White Glaze",
+    "color": "#92a9b5",
+    "bonus": "0%",
+    "minerals": {
+      "16272": 69,
+      "16273": 35,
+      "16275": 1,
+      "17888": 414
+    },
+    "availableIn": [
+      "Caldari"
+    ],
+    "compressesFrom": 16265,
     "compressAmount": 1
   }
 ]

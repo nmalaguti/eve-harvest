@@ -4,7 +4,7 @@ import {
   useOreFilters,
   useBonusFilters,
   useCompressedFilters,
-  useSecurityFilters,
+  useAvailabilityFilters,
 } from "../hooks"
 import useLocalStorageState from "use-local-storage-state"
 import Loading from "./loading"
@@ -14,6 +14,9 @@ import Filter from "./filter"
 import IskM3 from "./isk-m3"
 import Bonus from "./bonus"
 import Icon from "./icon"
+import sortBy from "lodash.sortby"
+import uniqBy from "lodash.uniqby"
+import uniq from "lodash.uniq"
 
 const iskCell = (
   selector: "buy" | "sell",
@@ -85,7 +88,7 @@ const columns = [
         >
           {row.name}
         </a>{" "}
-        <Bonus amount={row.bonus} />
+        <Bonus bonus={row.bonus} />
       </div>
     ),
   },
@@ -118,10 +121,14 @@ export default function OreTable({
   actions: React.ComponentElement<any, any>
 }) {
   const { data, error } = Prices.useContainer()
+  const [asteroidType, setAsteroidType] = useLocalStorageState(
+    "asteroidType",
+    "ore",
+  )
   const [oreFilters] = useOreFilters()
   const [bonusFilters] = useBonusFilters()
   const [compressedFilters] = useCompressedFilters()
-  const [securityFilters] = useSecurityFilters()
+  const [availabilityFilters] = useAvailabilityFilters()
   const [sortField, setSortField] = useLocalStorageState(
     "sortField",
     "buy.perm3",
@@ -131,19 +138,93 @@ export default function OreTable({
   if (error) return <div className="p-4">failed to load</div>
   if (!data) return <Loading />
 
+  const filteredData = data.filter((ore) => ore.asteroidType === asteroidType)
+
+  const filterGroups: OreGroup[] = sortBy(
+    uniqBy(
+      filteredData.map((ore) => ({
+        name: ore.group,
+        color: ore.color,
+        baseOreId: ore.id,
+      })),
+      "name",
+    ),
+    (group: OreGroup) => group.name,
+  )
+
+  const filterBonuses: string[] = sortBy(
+    uniq(filteredData.map((ore) => ore.bonus)),
+    (bonus) => {
+      const parsed = parseInt(bonus)
+      if (isNaN(parsed)) {
+        return bonus
+      }
+
+      return parsed
+    },
+  )
+
+  const filterAvailability: string[] = sortBy(
+    uniq(filteredData.flatMap((ore) => ore.availableIn)),
+    (availability) => {
+      if (availability.startsWith("R")) {
+        return parseInt(availability.substring(1))
+      }
+      return availability
+    },
+  )
+
   return (
     <DataTable
       title={
-        <a href="https://harvest.poisonreverse.net/" title="Eve Harvest">
-          Eve Harvest
-        </a>
+        <>
+          <a
+            href="https://harvest.poisonreverse.net/"
+            title="Eve Harvest"
+            className="mr-3 sm:mr-8 md:mr-16"
+          >
+            Eve Harvest
+          </a>
+          <button
+            className={`${
+              asteroidType === "ore"
+                ? "border-transparent bg-orange-200 text-orange-800"
+                : "text-orange-400 border-gray-100"
+            } text-sm px-3 sm:px-8 md:px-12 py-3 font-semibold leading-none border hover:border-transparent hover:bg-gray-100 hover:text-orange-800`}
+            onClick={() => setAsteroidType("ore")}
+          >
+            Ore
+          </button>
+          <button
+            className={`${
+              asteroidType === "moon"
+                ? "border-transparent bg-purple-200 text-purple-800"
+                : "text-purple-300 border-gray-100"
+            } text-sm px-3 sm:px-8 md:px-12 py-3 font-semibold leading-none border hover:border-transparent hover:bg-gray-100 hover:text-purple-800`}
+            onClick={() => setAsteroidType("moon")}
+          >
+            Moon
+          </button>
+          <button
+            className={`${
+              asteroidType === "ice"
+                ? "border-transparent bg-blue-100 text-blue-900"
+                : "text-blue-200 border-gray-100"
+            } text-sm px-3 sm:px-8 md:px-12 py-3 font-semibold leading-none border hover:border-transparent hover:bg-gray-100 hover:text-blue-900`}
+            onClick={() => setAsteroidType("ice")}
+          >
+            Ice
+          </button>
+        </>
       }
       columns={columns}
-      data={data
-        .filter((ore) => oreFilters[ore.groupId.toString()])
-        .filter((ore) => bonusFilters[ore.bonus.toString()])
+      data={filteredData
+        .filter((ore) => oreFilters[ore.group])
+        .filter((ore) => bonusFilters[ore.bonus])
         .filter((ore) => compressedFilters[ore.compressed.toString()])
-        .filter((ore) => ore.availableIn.some((available) => securityFilters[available]))}
+        .filter((ore) =>
+          ore.availableIn.some((available) => availabilityFilters[available]),
+        )}
       theme="custom"
       customStyles={customStyles}
       defaultSortField={sortField}
@@ -152,10 +233,16 @@ export default function OreTable({
         setSortField(column.selector as string)
         setSortAsc(sortDirection === "asc")
       }}
-      actions={actions}
+      actions={<>{actions}</>}
       subHeader
       subHeaderAlign="center"
-      subHeaderComponent={<Filter />}
+      subHeaderComponent={
+        <Filter
+          filterGroups={filterGroups}
+          filterBonuses={filterBonuses}
+          filterAvailability={filterAvailability}
+        />
+      }
       striped
       highlightOnHover
     />
