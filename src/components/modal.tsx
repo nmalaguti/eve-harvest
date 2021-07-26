@@ -100,6 +100,9 @@ export default function Modal({
                 https://www.fuzzwork.co.uk/ore/
               </a>
             </li>
+            <li>
+              <a href="https://ore.cerlestes.de/">https://ore.cerlestes.de/</a>
+            </li>
           </ul>
           <p>
             The pricing data is from{" "}
